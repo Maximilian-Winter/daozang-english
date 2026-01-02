@@ -15,7 +15,7 @@ using semantic- based, punctuation- based and marker- based chunking.
 - Quality: First-pass translation requiring scholarly review
 
 ### Python Utilities
-In the python_utils folder are scripts to create a bilingual sql database with text search interface.
+In the python_utils folder are scripts to create a bilingual sql database with text search interface in Python, supporting bilingual search.
 
 ### ⚠️ CRITICAL DISCLAIMERS AND WARNINGS ⚠️
 #### ⚠️ WARNING: Sacred and Potentially Dangerous Content
