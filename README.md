@@ -2,6 +2,20 @@
 This repository contains a mostly complete english translation of the Zhengtong Daozang, the orthodox daoist canon.
 Before seriously practicing any of the texts, please read the ⚠️ CRITICAL DISCLAIMERS AND WARNINGS ⚠️ section below.
 
+## 🌟 What is the Daozang?
+
+The **Daozang** (道藏, "Treasury of the Dao") is the collected canon of Daoist texts, compiled over centuries. It contains:
+
+- **Scriptures** revealed by celestial beings
+- **Alchemical treatises** on immortality cultivation  
+- **Ritual manuals** for ceremonies and invocations
+- **Philosophical texts** on the nature of the Dao
+- **Biographies** of immortals and realized masters
+- **Medical and divinatory** knowledge
+- **Commentaries** spanning multiple dynasties
+
+This translation makes these texts—previously accessible only to classical Chinese readers—available to the global community.
+
 
 #### About This Translation
 This repository contains English translations of 1676 texts
