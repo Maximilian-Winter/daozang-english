@@ -1,0 +1,64 @@
+{
+  "source_id": "金丹四百字",
+  "source_file": "chunked_daozang\\金丹四百字.json",
+  "total_chunks": 3,
+  "total_original_chars": 593,
+  "total_translated_chars": 3543,
+  "total_translation_time": 15.040324687957764,
+  "model_used": "mistralai/ministral-14b-2512",
+  "metadata": {
+    "source_file": "dao\\藏外\\金丹四百字.txt",
+    "category": "藏外"
+  },
+  "full_translation": "**\"The Four Hundred Characters on the Golden Elixir [First Section]**\nTrue Soil seizes True Lead,\nTrue Lead refines True Mercury.\nLead and Mercury return to True Soil—\nBody and mind in stillness, unmoved.\n\n**[Second Section]**\nFrom emptiness, snow descends below;\nFrom silence, a yellow sprout emerges.\nThe jade furnace warms gently—\nOver the cauldron, purple vapors rise.\n\n**[Third Section]**\nIn the Flowering Pool, lotuses bloom;\nDivine waters, golden waves, lie still.\nAt midnight, the moon shines bright—\nHeaven and Earth, a single mirror wheel.\n\n**[Fourth Section]**\nCinnabar refines the Yang-qi;\nMercury cooks the Golden Essence.\nWhen Essence meets Yang-qi,\nCinnabar and Mercury merge.\n\n**[Fifth Section]**\nThe Sun’s spirit—fat of the Jade Hare,\nThe Moon’s essence—marrow of the Golden Crow.\nGathered into the cauldron,\nThey transform into a single pool of water.\n\n**[Sixth Section]**\nMedicine awakens the Mysterious Aperture;\nFire and timing stir the Yang Furnace.\nWhen Dragon and Tiger unite,\nThe Treasure Cauldron yields the Mysterious Pearl.\n\n**[Seventh Section]**\nThis aperture is no common thing—\nYin and Yang together forge it.\nCalled the Divine-Qi Cavity,\nWithin it dwell the Kan-Li Essences.\n\n**[Eighth Section]**\nOne drop of Wood-Mercury, crimson;\nThree *jin* of Gold-Lead, black.\nLead and Mercury coalesce into elixir—\nLayer by layer, violet-golden.\n\n**[Ninth Section]** *(incomplete)*\"\n\n「The homestead’s landscapes gleam in splendor,\nAs winds and rains mark the spring’s due hour.\nPlowshares and hoes never cease their labor—\nThe earth reveals itself as golden treasure.  **[Tenth Section]**\n\nTrue Lead is born from the *Kan*,\nIts purpose lies within the *Li* Palace.\nFrom black, it turns to crimson—\nA single cauldron’s vapor thickens into mist.  **[Eleventh Section]**\n\nTrue Mercury arises from the *Li*,\nYet its use belongs to the *Kan*.\nA maiden passes through the Southern Garden,\nHer hand clutching a jade olive.  **[Twelfth Section]**\n\n*Zhen* and *Dui* are neither East nor West,\n*Kan* and *Li* transcend South and North.\nThe Dipper’s handle traverses the Heavenly Cycle—\nThe adept gathers at the pivotal moment.  **[Thirteenth Section]**\n\nFire and timing need no fixed hour,\nFor Winter Solstice is not bound to *Zi*.\nWhen seeking the method of bathing,\n*Mao* and *You* mark the moment of emptiness.  **[Fourteenth Section]**\n\nCrow’s liver and Hare’s marrow—\nSeized and returned to one place.\nGrain by grain, they are refined—\nFrom subtle essence to full realization.  **[Fifteenth Section]**\n\nChaos enfolds the Void,\nThe Void embraces the Three Realms.\nSeeking their origin,\nOne grain swells like a *shu* millet seed.  **[Sixteenth Section]**\n\nHeaven and Earth merge in True Fluid,\nSun and Moon hold True Essence.\nMastering the *Kan* and *Li* foundation,\nThe Three Realms return to a singular body.  **[Seventeenth Section]**\n\nThe Dragon emerges from the Eastern Sea,\nThe Tiger rises from the Western Mountain.\nTwo beasts wage a single battle—\nTransformed, they become Heaven and Earth’s kin.  **[Eighteenth Section]」\n\nThe golden flower blooms with mercury leaves,\nThe jade bud sprouts leaden branches.\n*Kan* and *Li* never pause—\nWhen will Heaven and Earth align?  **[Nineteenth Section]**\n\nBathing must guard against peril,\nDrawing and adding must be held with caution—\nAll comes from three ten-thousand *ke*,\nA misstep risks the loss of a *hao* or *li*.  **[Twentieth Section]**\n\nWhen husband and wife unite,\nThe chamber’s clouds and rains form.\nA year’s labor yields a child—\nEach one knows how to ride the crane.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "金丹四百字 【其一】 真土擒真铅 真铅制真汞 铅汞归真土 身心寂不动 【其二】 虚无发下雪 寂静发黄芽 玉炉火温温 鼎上飞紫霞 【其三】 华池莲花开 神水金波静 夜深月正明 天地一轮镜 【其四】 朱砂炼阳气 水银烹金精 金精与阳气 朱砂而水银 【其五】 日魂玉兔脂 月魄金乌髓 掇来归鼎中 化作一泓水 【其六】 药物生玄窍 火候发阳炉 龙虎交会时 宝鼎产玄珠 【其七】 此窍非凡物 乾坤共合成 名为神气穴 内有坎离精 【其八】 木汞一点红 金铅三斤黑 铅汞结丹砂 耻耻紫金色 【其九】",
+      "translated_text": "**\"The Four Hundred Characters on the Golden Elixir [First Section]**\nTrue Soil seizes True Lead,\nTrue Lead refines True Mercury.\nLead and Mercury return to True Soil—\nBody and mind in stillness, unmoved.\n\n**[Second Section]**\nFrom emptiness, snow descends below;\nFrom silence, a yellow sprout emerges.\nThe jade furnace warms gently—\nOver the cauldron, purple vapors rise.\n\n**[Third Section]**\nIn the Flowering Pool, lotuses bloom;\nDivine waters, golden waves, lie still.\nAt midnight, the moon shines bright—\nHeaven and Earth, a single mirror wheel.\n\n**[Fourth Section]**\nCinnabar refines the Yang-qi;\nMercury cooks the Golden Essence.\nWhen Essence meets Yang-qi,\nCinnabar and Mercury merge.\n\n**[Fifth Section]**\nThe Sun’s spirit—fat of the Jade Hare,\nThe Moon’s essence—marrow of the Golden Crow.\nGathered into the cauldron,\nThey transform into a single pool of water.\n\n**[Sixth Section]**\nMedicine awakens the Mysterious Aperture;\nFire and timing stir the Yang Furnace.\nWhen Dragon and Tiger unite,\nThe Treasure Cauldron yields the Mysterious Pearl.\n\n**[Seventh Section]**\nThis aperture is no common thing—\nYin and Yang together forge it.\nCalled the Divine-Qi Cavity,\nWithin it dwell the Kan-Li Essences.\n\n**[Eighth Section]**\nOne drop of Wood-Mercury, crimson;\nThree *jin* of Gold-Lead, black.\nLead and Mercury coalesce into elixir—\nLayer by layer, violet-golden.\n\n**[Ninth Section]** *(incomplete)*\"",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 376,
+      "start_sentence": 0,
+      "end_sentence": 41,
+      "model_used": "mistralai/ministral-14b-2512",
+      "translation_time": 5.852884292602539,
+      "metadata": {
+        "source_file": "dao\\藏外\\金丹四百字.txt",
+        "category": "藏外"
+      }
+    },
+    {
+      "chunk_index": 1,
+      "original_text": "家园景物丽 风雨正春时 犁锄不废力 大地皆黄金 【其十】 真铅生于坎 其用在离宫 以黑而变红 一鼎云气浓 【其十一】 真汞产于离 其用却在坎 姹女过南园 手持玉橄榄 【其十二】 震兑非东西 坎离不南北 斗柄运周天 要人会攒蔟 【其十三】 火候不须时 冬至岂在子 及其沐浴法 卯酉时虚比 【其十四】 乌肝与兔髓 擒来归一处 一粒复一粒 从微而至着 【其十五】 混沌包虚空 虚空括三界 及寻其根源 一粒如黍大 【其十六】 天地交真液 日月含真精 会得坎离基 三界归一身 【其十七】 龙从东海来 虎向西山起 两兽战一场 化作天地随 【其十八】",
+      "translated_text": "「The homestead’s landscapes gleam in splendor,\nAs winds and rains mark the spring’s due hour.\nPlowshares and hoes never cease their labor—\nThe earth reveals itself as golden treasure.  **[Tenth Section]**\n\nTrue Lead is born from the *Kan*,\nIts purpose lies within the *Li* Palace.\nFrom black, it turns to crimson—\nA single cauldron’s vapor thickens into mist.  **[Eleventh Section]**\n\nTrue Mercury arises from the *Li*,\nYet its use belongs to the *Kan*.\nA maiden passes through the Southern Garden,\nHer hand clutching a jade olive.  **[Twelfth Section]**\n\n*Zhen* and *Dui* are neither East nor West,\n*Kan* and *Li* transcend South and North.\nThe Dipper’s handle traverses the Heavenly Cycle—\nThe adept gathers at the pivotal moment.  **[Thirteenth Section]**\n\nFire and timing need no fixed hour,\nFor Winter Solstice is not bound to *Zi*.\nWhen seeking the method of bathing,\n*Mao* and *You* mark the moment of emptiness.  **[Fourteenth Section]**\n\nCrow’s liver and Hare’s marrow—\nSeized and returned to one place.\nGrain by grain, they are refined—\nFrom subtle essence to full realization.  **[Fifteenth Section]**\n\nChaos enfolds the Void,\nThe Void embraces the Three Realms.\nSeeking their origin,\nOne grain swells like a *shu* millet seed.  **[Sixteenth Section]**\n\nHeaven and Earth merge in True Fluid,\nSun and Moon hold True Essence.\nMastering the *Kan* and *Li* foundation,\nThe Three Realms return to a singular body.  **[Seventeenth Section]**\n\nThe Dragon emerges from the Eastern Sea,\nThe Tiger rises from the Western Mountain.\nTwo beasts wage a single battle—\nTransformed, they become Heaven and Earth’s kin.  **[Eighteenth Section]」",
+      "overlap_context": "kens the Mysterious Aperture;\nFire and timing stir the Yang Furnace.\nWhen Dragon and Tiger unite,\nThe Treasure Cauldron yields the Mysterious Pearl.\n\n**[Seventh Section]**\nThis aperture is no common thing—\nYin and Yang together forge it.\nCalled the Divine-Qi Cavity,\nWithin it dwell the Kan-Li Essences.\n\n**[Eighth Section]**\nOne drop of Wood-Mercury, crimson;\nThree *jin* of Gold-Lead, black.\nLead and Mercury coalesce into elixir—\nLayer by layer, violet-golden.\n\n**[Ninth Section]** *(incomplete)*\"",
+      "start_char": 376,
+      "end_char": 795,
+      "start_sentence": 42,
+      "end_sentence": 86,
+      "model_used": "mistralai/ministral-14b-2512",
+      "translation_time": 5.2711122035980225,
+      "metadata": {
+        "source_file": "dao\\藏外\\金丹四百字.txt",
+        "category": "藏外"
+      }
+    },
+    {
+      "chunk_index": 2,
+      "original_text": "金花开汞叶 玉蒂长铅枝 坎离不曾闲 乾坤今几时 【其十九】 沐浴防危险 抽添自谨持 都来三万刻 差失恐豪厘 【其二十】 夫妇交会时 洞房云雨作 一载生个儿 个个会骑鹤",
+      "translated_text": "The golden flower blooms with mercury leaves,\nThe jade bud sprouts leaden branches.\n*Kan* and *Li* never pause—\nWhen will Heaven and Earth align?  **[Nineteenth Section]**\n\nBathing must guard against peril,\nDrawing and adding must be held with caution—\nAll comes from three ten-thousand *ke*,\nA misstep risks the loss of a *hao* or *li*.  **[Twentieth Section]**\n\nWhen husband and wife unite,\nThe chamber’s clouds and rains form.\nA year’s labor yields a child—\nEach one knows how to ride the crane.",
+      "overlap_context": "The Void embraces the Three Realms.\nSeeking their origin,\nOne grain swells like a *shu* millet seed.  **[Sixteenth Section]**\n\nHeaven and Earth merge in True Fluid,\nSun and Moon hold True Essence.\nMastering the *Kan* and *Li* foundation,\nThe Three Realms return to a singular body.  **[Seventeenth Section]**\n\nThe Dragon emerges from the Eastern Sea,\nThe Tiger rises from the Western Mountain.\nTwo beasts wage a single battle—\nTransformed, they become Heaven and Earth’s kin.  **[Eighteenth Section]」",
+      "start_char": 795,
+      "end_char": 923,
+      "start_sentence": 87,
+      "end_sentence": 100,
+      "model_used": "mistralai/ministral-14b-2512",
+      "translation_time": 3.916328191757202,
+      "metadata": {
+        "source_file": "dao\\藏外\\金丹四百字.txt",
+        "category": "藏外"
+      }
+    }
+  ]
+}

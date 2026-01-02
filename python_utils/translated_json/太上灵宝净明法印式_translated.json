@@ -1,0 +1,32 @@
+{
+  "source_id": "太上灵宝净明法印式",
+  "source_file": "chunked_daozang\\太上灵宝净明法印式.json",
+  "total_chunks": 1,
+  "total_original_chars": 126,
+  "total_translated_chars": 761,
+  "total_translation_time": 4.297298431396484,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞玄部\\方法类\\太上灵宝净明法印式.txt",
+    "category": "方法类"
+  },
+  "full_translation": "The *Scripture of the Supreme Numinous Treasure’s Pure Brightness Dharma Seals*\nTitle: *Scripture of the Supreme Numinous Treasure’s Pure Brightness Dharma Seal Formulas*. Author unknown. Three sections in one scroll.\nSource text: *Zhengtong Daoist Canon*, Dongxuan Section, Methods Category.\n\nAll who receive the Pure Brightness Dharma shall carve two seals, each two cun and four fen in size. One is called the *Seal of the Supreme Pure Brightness*, the other the *Seal of the Lord of the Pure Brightness Dharma*. The *Pure Brightness Seal* is used for memorials. The *Seal of the Lord of the Dharma* is employed for dispatching summons to ghosts and spirits.\n\nHere ends the *Scripture of the Supreme Numinous Treasure’s Pure Brightness Dharma Seal Formulas*.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上灵宝净明法印式 经名：太上灵宝浄明法印式。 撰人不祥。 三篇同卷。 底本出处：《正统道藏》洞玄部方法类。 凡得浄明法者，雕印二颗，各二寸四分，一曰太上浄明之印，一曰浄明法主之印。 浄明之印，奏牍即用之。 法主之印，即遣呼召鬼神 太上灵宝浄明法印式竟",
+      "translated_text": "The *Scripture of the Supreme Numinous Treasure’s Pure Brightness Dharma Seals*\nTitle: *Scripture of the Supreme Numinous Treasure’s Pure Brightness Dharma Seal Formulas*. Author unknown. Three sections in one scroll.\nSource text: *Zhengtong Daoist Canon*, Dongxuan Section, Methods Category.\n\nAll who receive the Pure Brightness Dharma shall carve two seals, each two cun and four fen in size. One is called the *Seal of the Supreme Pure Brightness*, the other the *Seal of the Lord of the Pure Brightness Dharma*. The *Pure Brightness Seal* is used for memorials. The *Seal of the Lord of the Dharma* is employed for dispatching summons to ghosts and spirits.\n\nHere ends the *Scripture of the Supreme Numinous Treasure’s Pure Brightness Dharma Seal Formulas*.",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 135,
+      "start_sentence": 0,
+      "end_sentence": 8,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 4.297298431396484,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\方法类\\太上灵宝净明法印式.txt",
+        "category": "方法类"
+      }
+    }
+  ]
+}

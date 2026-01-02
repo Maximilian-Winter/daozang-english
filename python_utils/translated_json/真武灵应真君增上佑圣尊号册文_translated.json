@@ -1,0 +1,48 @@
+{
+  "source_id": "真武灵应真君增上佑圣尊号册文",
+  "source_file": "chunked_daozang\\真武灵应真君增上佑圣尊号册文.json",
+  "total_chunks": 2,
+  "total_original_chars": 408,
+  "total_translated_chars": 2913,
+  "total_translation_time": 16.3986713886261,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞神部\\谱箓类\\真武灵应真君增上佑圣尊号册文.txt",
+    "category": "谱箓类"
+  },
+  "full_translation": "**Register of Elevated Titles for the Perfected Lord Zhenwu, Numinous and Responsive, Supreme Protector of the Sagely**\n\n**Scripture Title:** *Register of Elevated Titles for the Perfected Lord Zhenwu, Numinous and Responsive, Supreme Protector of the Sagely*\nComposed by Emperor Huizong of Song (Zhao Ji).\nThree sections in one scroll.\nSource text: *Daoist Canon of the Zhengtong Era*, \"Divine Empyrean Section,\" \"Genealogical and Registerial Category.\"\n\n---\n\n**Register of Elevated Titles for the Perfected Lord Zhenwu, Numinous and Responsive, Supreme Protector of the Sagely**\n\nIn the second year of the Daguan reign, cyclical year *wuzǐ*, third month, first day *xīnhài*, twenty-fourth day *jiǎxū*, the Emperor respectfully bows twice and declares:\n\nOf the August Thearch on High, who nurtures and protects the people below,\nWho governs and guards the northern quarter, there is a great divine general.\nUtterly true in manifestation, responsive through karmic resonance,\nHis profound virtue and hidden merit sustain the myriad states.\n\nWe reverently consider the Perfected Lord Zhenwu, Numinous and Responsive:\nAligning with the *Xu* and *Wei* constellations, uniting the forms of tortoise and serpent,\nHis Dao and virtue are wondrous beyond naming, his awe-inspiring numen pervades the ten thousand existents.\nTraversing the six directions, he discerns the formless,\nBlessing the good and punishing the licentious, sheltering all living things.\n\nOur dynasty, receiving the precious mandate, has endured for one hundred and fifty years.\nNow extending to our humble self, we inherit this grand legacy.\nWhat we desire, we unfailingly attain; what we undertake, we unfailingly accomplish.\nDivinity and humanity rest in peace; the seas and lands are tranquil.\nNo malevolent omens arise; auspicious signs repeatedly arrive.\nThe prosperity of Great Peace flourishes in the abundance of *qi*.\nWithout the divine one’s abundant guidance, how could we reach this state?\n\nIt is fitting to advance his illustrious titles, thereby manifesting our luminous gratitude.\n\nWe reverently dispatch Chao Sanlang, Probationary Minister of Personnel concurrently serving as Reader-in-Waiting and Compiler of the Veritable Records, bestowed with the Purple Gold Fish Bag, Yu Shen, to present the ceremonial document elevating the august title to: \"Protective Sage Perfected Warrior Numinous-Responsive Perfected Lord.\"\n\nFor those who hold the registers of destiny, the rites of the divine heavens are indeed canonical. Leading the people in reverence, nothing surpasses the exaltation of ritual. When devotion dwells within, it is fitting to express it through ceremonial form. May he deign to look upon us with favor and bestow blessings and felicity.\n\nRespectfully proclaimed.\nThe ceremonial document for the elevation of the title of Perfected Warrior Numinous-Responsive Perfected Lord to \"Protective Sage\" is hereby concluded.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "真武灵应真君增上佑圣尊号册文 经名：真武灵应真君增上佑圣专号册文。 宋赵佶撰。 三篇同卷。 底本出处，《正统道藏》洞神部谱录类。 真武灵应真君增上佑圣尊号册文 维大观二年岁次戊子三月辛亥朔二十四日甲戌，皇帝谨再拜，言曰：惟皇上帝，孚佑下民。 统镇北方，有大神将。 至真示化，缘感而通。 盛德阴功，万邦未赖。 恭惟真武灵应真君，应虚危之次，合龟蛇之形。 道德妙於难名，威灵摄於万有。 周行六合，洞察无形。 祚善刑淫，庇护草品。 国家诞膺宝命，百五十年。 肆及眇躬，嗣承丕绪。 欲无不获，为无不成。 神人底宁，海寓静谧。 妖孽不作，嘉祥荐臻。 太平之休，厥为炁盛。 非神茂迪，曷济登兹。 宜进徽称，式示昭答。",
+      "translated_text": "**Register of Elevated Titles for the Perfected Lord Zhenwu, Numinous and Responsive, Supreme Protector of the Sagely**\n\n**Scripture Title:** *Register of Elevated Titles for the Perfected Lord Zhenwu, Numinous and Responsive, Supreme Protector of the Sagely*\nComposed by Emperor Huizong of Song (Zhao Ji).\nThree sections in one scroll.\nSource text: *Daoist Canon of the Zhengtong Era*, \"Divine Empyrean Section,\" \"Genealogical and Registerial Category.\"\n\n---\n\n**Register of Elevated Titles for the Perfected Lord Zhenwu, Numinous and Responsive, Supreme Protector of the Sagely**\n\nIn the second year of the Daguan reign, cyclical year *wuzǐ*, third month, first day *xīnhài*, twenty-fourth day *jiǎxū*, the Emperor respectfully bows twice and declares:\n\nOf the August Thearch on High, who nurtures and protects the people below,\nWho governs and guards the northern quarter, there is a great divine general.\nUtterly true in manifestation, responsive through karmic resonance,\nHis profound virtue and hidden merit sustain the myriad states.\n\nWe reverently consider the Perfected Lord Zhenwu, Numinous and Responsive:\nAligning with the *Xu* and *Wei* constellations, uniting the forms of tortoise and serpent,\nHis Dao and virtue are wondrous beyond naming, his awe-inspiring numen pervades the ten thousand existents.\nTraversing the six directions, he discerns the formless,\nBlessing the good and punishing the licentious, sheltering all living things.\n\nOur dynasty, receiving the precious mandate, has endured for one hundred and fifty years.\nNow extending to our humble self, we inherit this grand legacy.\nWhat we desire, we unfailingly attain; what we undertake, we unfailingly accomplish.\nDivinity and humanity rest in peace; the seas and lands are tranquil.\nNo malevolent omens arise; auspicious signs repeatedly arrive.\nThe prosperity of Great Peace flourishes in the abundance of *qi*.\nWithout the divine one’s abundant guidance, how could we reach this state?\n\nIt is fitting to advance his illustrious titles, thereby manifesting our luminous gratitude.",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 290,
+      "start_sentence": 0,
+      "end_sentence": 21,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 11.551508903503418,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞神部\\谱箓类\\真武灵应真君增上佑圣尊号册文.txt",
+        "category": "谱箓类"
+      }
+    },
+    {
+      "chunk_index": 1,
+      "original_text": "谨遣朝散郎试吏部尚书兼侍读实录修撰赐紫金鱼袋余深，奉册增上尊号曰：佑圣真武灵应真君。 夫惟秉箓，实典神天。 作民恭先，其在隆礼。 情着於内，备文以行。 尚冀眷昭，俯垂贶祉。 谨言。 真武灵应真君增上佑圣尊号册文竟",
+      "translated_text": "We reverently dispatch Chao Sanlang, Probationary Minister of Personnel concurrently serving as Reader-in-Waiting and Compiler of the Veritable Records, bestowed with the Purple Gold Fish Bag, Yu Shen, to present the ceremonial document elevating the august title to: \"Protective Sage Perfected Warrior Numinous-Responsive Perfected Lord.\"\n\nFor those who hold the registers of destiny, the rites of the divine heavens are indeed canonical. Leading the people in reverence, nothing surpasses the exaltation of ritual. When devotion dwells within, it is fitting to express it through ceremonial form. May he deign to look upon us with favor and bestow blessings and felicity.\n\nRespectfully proclaimed.\nThe ceremonial document for the elevation of the title of Perfected Warrior Numinous-Responsive Perfected Lord to \"Protective Sage\" is hereby concluded.",
+      "overlap_context": "our humble self, we inherit this grand legacy.\nWhat we desire, we unfailingly attain; what we undertake, we unfailingly accomplish.\nDivinity and humanity rest in peace; the seas and lands are tranquil.\nNo malevolent omens arise; auspicious signs repeatedly arrive.\nThe prosperity of Great Peace flourishes in the abundance of *qi*.\nWithout the divine one’s abundant guidance, how could we reach this state?\n\nIt is fitting to advance his illustrious titles, thereby manifesting our luminous gratitude.",
+      "start_char": 290,
+      "end_char": 394,
+      "start_sentence": 22,
+      "end_sentence": 28,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 4.847162485122681,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞神部\\谱箓类\\真武灵应真君增上佑圣尊号册文.txt",
+        "category": "谱箓类"
+      }
+    }
+  ]
+}

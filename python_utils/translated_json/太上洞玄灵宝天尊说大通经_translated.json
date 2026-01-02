@@ -1,0 +1,32 @@
+{
+  "source_id": "太上洞玄灵宝天尊说大通经",
+  "source_file": "chunked_daozang\\太上洞玄灵宝天尊说大通经.json",
+  "total_chunks": 1,
+  "total_original_chars": 307,
+  "total_translated_chars": 2003,
+  "total_translation_time": 9.896093845367432,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞玄部\\本文类\\太上洞玄灵宝天尊说大通经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "The *Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*\n\n**Scripture Title:** *The Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*. Author unknown, likely composed by Daoist adepts of the Tang or Song dynasties. One fascicle.\n\n**Source Text:** *Zhengtong Daoist Canon*, Cavernous Mystery Section, Category of Original Texts.\n\n---\n\n### *The Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*\n\n#### **Chapter on True Emptiness**\nIt arises before Heaven yet is born without form;\nIt abides after Heaven yet exists without substance.\nYet without substance, it has never truly abided.\nThus is it called inconceivable.\n\n#### **Chapter on Profound Principle**\nStillness is its nature, and the heart-mind dwells within it;\nActivity is its heart-mind, and nature dwells within it.\nWhen the heart-mind arises, nature vanishes; when the heart-mind ceases, nature appears.\nLike space, it is without form—serene, perfect, and complete.\n\n#### **Chapter on Profound Mystery**\nThe Great Dao is without image, thus it inwardly gathers the manifest;\nTrue nature is without action, thus it outwardly does not generate the heart-mind.\nAbiding in suchness, it is naturally boundless.\nFacing circumstances yet forgetting them, it does not sink into the demons of the six thieves;\nDwelling in the dust yet transcending it, it does not fall into the transformations of the ten thousand conditions.\nIn perfect stillness, it does not move; in perfect harmony, it does not shift.\nIts wisdom illumines the ten directions, its emptiness transforms without action.\n\n**Verse:**\nWith form, one awakens to the formless;\nWithout cultivation, one dissolves cultivation.\nEmbracing the bodies of the ten thousand images,\nNot a single thread is clung to.\n\n**Here ends *The Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*.**",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上洞玄灵宝天尊说大通经 经名：太上洞玄灵宝天尊说大通经。 撰人不详，疑系唐宋道流所作。 一卷。 底本出处：《正统道藏》洞玄部本文类。 太上洞玄灵宝天尊说大通经 真空章 先天而生，生而无形； 后天而存，存而无体。 然而无体，未尝存也。 故曰不可思议。 玄理章 静为之性，心在其中矣； 动为之心； 性在其中矣。 心生性灭，心灭性现，如空无相，湛然圆满。 玄妙章 大道无象，故内摄於有； 真性无为，故外不生其心。 如如自然，广无边际。 对境忘境，不沉六贼之魔； 居尘出尘，不落万缘之化。 致静不动，致和不迁。 慧照十方，虚变无为。 偈曰： 有法悟无法，无修解有修。 包含万象体，不挂一丝头。 太上洞玄灵宝天尊说大通经竟",
+      "translated_text": "The *Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*\n\n**Scripture Title:** *The Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*. Author unknown, likely composed by Daoist adepts of the Tang or Song dynasties. One fascicle.\n\n**Source Text:** *Zhengtong Daoist Canon*, Cavernous Mystery Section, Category of Original Texts.\n\n---\n\n### *The Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*\n\n#### **Chapter on True Emptiness**\nIt arises before Heaven yet is born without form;\nIt abides after Heaven yet exists without substance.\nYet without substance, it has never truly abided.\nThus is it called inconceivable.\n\n#### **Chapter on Profound Principle**\nStillness is its nature, and the heart-mind dwells within it;\nActivity is its heart-mind, and nature dwells within it.\nWhen the heart-mind arises, nature vanishes; when the heart-mind ceases, nature appears.\nLike space, it is without form—serene, perfect, and complete.\n\n#### **Chapter on Profound Mystery**\nThe Great Dao is without image, thus it inwardly gathers the manifest;\nTrue nature is without action, thus it outwardly does not generate the heart-mind.\nAbiding in suchness, it is naturally boundless.\nFacing circumstances yet forgetting them, it does not sink into the demons of the six thieves;\nDwelling in the dust yet transcending it, it does not fall into the transformations of the ten thousand conditions.\nIn perfect stillness, it does not move; in perfect harmony, it does not shift.\nIts wisdom illumines the ten directions, its emptiness transforms without action.\n\n**Verse:**\nWith form, one awakens to the formless;\nWithout cultivation, one dissolves cultivation.\nEmbracing the bodies of the ten thousand images,\nNot a single thread is clung to.\n\n**Here ends *The Great Permeation Scripture Spoken by the Most High Cavernous Mystery Numinous Treasure Heavenly Worthy*.**",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 330,
+      "start_sentence": 0,
+      "end_sentence": 27,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 9.896093845367432,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\本文类\\太上洞玄灵宝天尊说大通经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

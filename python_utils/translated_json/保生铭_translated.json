@@ -1,0 +1,32 @@
+{
+  "source_id": "保生铭",
+  "source_file": "chunked_daozang\\保生铭.json",
+  "total_chunks": 1,
+  "total_original_chars": 380,
+  "total_translated_chars": 2182,
+  "total_translation_time": 13.316505908966064,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞神部\\方法类\\保生铭.txt",
+    "category": "方法类"
+  },
+  "full_translation": "**The Inscription on Preserving Life**\n\n*Title:* *Inscription on Preserving Life*\n*Author:* Sun Simiao of the Tang Dynasty\n*Source:* *Daoist Canon of the Zhengtong Era*, *Methods* section of the *Dongshen* Division\n\n**Inscription on Preserving Life**\nBy Sun Simiao, the Perfected One of the Tang\n\nIf one exerts the body in moderation, the hundred diseases cannot take form.\nAvoid drunkenness in drink, and ailments will not arise of themselves.\nAfter eating, walk a hundred paces, and often rub the belly with your hands.\nSleep not with too high a pillow; do not spit or blow your nose far away.\nTrim the nails on *yin* and *chou* days; comb the hair a hundred times.\nWhen full, stand to urinate; when hungry, sit to pass water.\nIn walking or sitting, avoid the wind; in dwelling, let no small drafts remain.\nNever relieve yourself facing north—throughout life, one will be dull and dim.\nThe sun and moon are naturally to be avoided; water and fire must still be feared.\nWash the feet each night, but eating to fullness brings no benefit.\nEnduring insult is the highest practice; slander severs even kin.\nAnxiety harms the spirit most; joy and anger disrupt harmony and breath.\nPluck the hairs from the nose often; habitually refrain from spitting on the ground.\nAt dawn, when about to rise, step down first with the left foot—\nFor a day, this averts misfortune, dispels evil, and wards off harm.\nSimply practicing the *Seven Stars Step* brings one long life and joy.\n\nSour flavors harm the sinews; pungent flavors deplete the upright *qi*.\nBitter harms the heart; sweet injures the will.\nExcess salt shortens life—do not indulge in any one taste.\nIn spring and summer, allow free flow; in autumn and winter, secure the Yang affairs.\nSolitude and seclusion preserve the true; caution and stillness are most precious.\nWealth and treasure are allotted by fate—knowing contentment is the greatest gain.\nForced knowledge is a great affliction; few desires bring no entanglements.\nThe spirit and *qi* abide naturally—those who study the Dao must persevere to the end.\nInscribe this upon the walls and doors to transmit it to the noble-minded.\n\n*End of the Inscription on Preserving Life*",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "保生铭 经名：保生铭。 唐·孙思邈撰。 底本出处：《正统道藏》洞神部方法类。 保生铭 唐·思邈孙真人述 人若劳於形，百病不能成。 饮酒忌大醉，诸疾自不生。 食了行百步，数将手摩肚。 睡不苦高枕，唾涕不远顾。 寅丑日剪甲，理发须百度。 饱则立小便，饥乃坐漩溺。 行坐莫当风，居处无小隙。 向北大小便，一生昏幂幂。 日月固然忌，水火仍畏避。 每夜洗脚外，饱食终无益。 忍辱为上乘，谗言断亲戚。 思虑最伤神，喜怒伤和息。 每去鼻中毛，常习不唾地。 平明欲起时，下状先左脚， 一日免灾咎，去邪兼辟恶。 但能七星步，令人长寿乐。 酸味伤於筋，辛味损正气，苦则损於心，甘则伤其志， 咸多促人寿，不得偏耽嗜。 春夏任宣通，秋冬固阳事。 独外是守真，慎静最为贵。 财帛生有分，知足将为利。 强知是大患，少欲终无累。 神气自然存，学道须终始。 书於壁户间，将用传君子。 保生铭竟",
+      "translated_text": "**The Inscription on Preserving Life**\n\n*Title:* *Inscription on Preserving Life*\n*Author:* Sun Simiao of the Tang Dynasty\n*Source:* *Daoist Canon of the Zhengtong Era*, *Methods* section of the *Dongshen* Division\n\n**Inscription on Preserving Life**\nBy Sun Simiao, the Perfected One of the Tang\n\nIf one exerts the body in moderation, the hundred diseases cannot take form.\nAvoid drunkenness in drink, and ailments will not arise of themselves.\nAfter eating, walk a hundred paces, and often rub the belly with your hands.\nSleep not with too high a pillow; do not spit or blow your nose far away.\nTrim the nails on *yin* and *chou* days; comb the hair a hundred times.\nWhen full, stand to urinate; when hungry, sit to pass water.\nIn walking or sitting, avoid the wind; in dwelling, let no small drafts remain.\nNever relieve yourself facing north—throughout life, one will be dull and dim.\nThe sun and moon are naturally to be avoided; water and fire must still be feared.\nWash the feet each night, but eating to fullness brings no benefit.\nEnduring insult is the highest practice; slander severs even kin.\nAnxiety harms the spirit most; joy and anger disrupt harmony and breath.\nPluck the hairs from the nose often; habitually refrain from spitting on the ground.\nAt dawn, when about to rise, step down first with the left foot—\nFor a day, this averts misfortune, dispels evil, and wards off harm.\nSimply practicing the *Seven Stars Step* brings one long life and joy.\n\nSour flavors harm the sinews; pungent flavors deplete the upright *qi*.\nBitter harms the heart; sweet injures the will.\nExcess salt shortens life—do not indulge in any one taste.\nIn spring and summer, allow free flow; in autumn and winter, secure the Yang affairs.\nSolitude and seclusion preserve the true; caution and stillness are most precious.\nWealth and treasure are allotted by fate—knowing contentment is the greatest gain.\nForced knowledge is a great affliction; few desires bring no entanglements.\nThe spirit and *qi* abide naturally—those who study the Dao must persevere to the end.\nInscribe this upon the walls and doors to transmit it to the noble-minded.\n\n*End of the Inscription on Preserving Life*",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 402,
+      "start_sentence": 0,
+      "end_sentence": 30,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 13.316505908966064,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞神部\\方法类\\保生铭.txt",
+        "category": "方法类"
+      }
+    }
+  ]
+}

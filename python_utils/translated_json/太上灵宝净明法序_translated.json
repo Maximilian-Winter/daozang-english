@@ -1,0 +1,32 @@
+{
+  "source_id": "太上灵宝净明法序",
+  "source_file": "chunked_daozang\\太上灵宝净明法序.json",
+  "total_chunks": 1,
+  "total_original_chars": 435,
+  "total_translated_chars": 2479,
+  "total_translation_time": 12.591915130615234,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞玄部\\方法类\\太上灵宝净明法序.txt",
+    "category": "方法类"
+  },
+  "full_translation": "**Preface to the Supreme Numinous Treasure Pure Brightness Method**\n\nThe *Pure Brightness Method* is a concealed scripture of the Supreme Clarity’s Mystic Capital and Jade Capital. In ancient times, the True Lord of Grand Yang, the Luminous King of Filial Dao, attained the supreme Dao through the radiance of filial virtue, illuminating the earth below. Thereupon, the Supreme Emperor of Supreme Clarity descended into the Hall of the Divine of Fusang Grotto, summoned the Luminous King, and expounded the Dharma to verify him, appointing him as the foremost disciple. He was titled the Great Perfected of the Numinous Treasure, the Jade Clarity’s Decreed Envoy, to deliver salvation in that era. Thus, the Perfected One vowed a great oath, pledging to dwell in the Eastern Limit to rescue all beings. This is known as the Numinous Treasure Savior from Suffering, the Heavenly Worthy—such was the fifteenth day of the eighth month in the first year of the Red Brightness era.\n\nIt is called *Pure Brightness*: \"pure\" means no darkness remains unilluminated, no speck of dust defiles; \"bright\" means all, from the foolish to the wise, look up to it. It is the gateway to liberation, the path to transcendence. Filial piety and fraternal duty serve as its standard; cultivation and refinement, its methods; and the secret essentials of practice, its core. Through accumulation and mutual enhancement, wisdom is honed, and only then does the Dao-qi become firm and complete, spirits and humans submit to service. In a single breath, one may grasp the profound principle.\n\nI once admired the winds of the Dao, seeking the teachings of masters far and wide, storing them in heart and mind with unwavering resolve. After receiving the full transmission of the method, I studied diligently, and my merit and practice reached fruition. Later, I encountered a supreme sage who transmitted this scripture to me, and thus its art was perfected. As for the wondrous traces of divine favor and transcendence bestowed upon me, they cannot be fully recounted.\n\nThose who obtain this book must not neglect themselves, for all are heirs to ten generations of accumulation, gradually ascending toward transcendence. I once composed a modest work, the *Scripture of the Dao* in thirty-five chapters, which circulated among the world, yet few attained it. How much more so this pivotal mechanism, the sacred register of the supreme sages—how could one dare treat it lightly?\n\nRespectfully inscribed.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上灵宝净明法序 经名：太上灵宝浄明法序。 撰人不详。 三篇同卷。 底本出处：《正统道藏》洞玄部方法类。 太上灵宝净明法序 浄明法者，乃上清玄都玉京之隐书。 昔太阳真君孝道明王，以孝道着明，照临下土，成无上道。 於是，上清上帝降於扶桑洞神之堂，召明王，而说法证之，以为最上弟子，号灵宝大真人玉清诏命使，以救度于时。 故真人发大誓愿，愿居东极，用救群品，是谓灵宝救苦天尊，乃赤明元年八月十五日也。 谓之浄明，争明者，无幽不烛，纤尘不污，愚智皆仰之，为开度之门，升真之路，以孝悌为之准式，修炼为之方术，行持之秘要。 积累相资，磨砻智慧，而后道炁坚完，神人伏役，一瞬息间，可达玄理。 余昔慕道风，徧求师旨，心存目识，志切意坚。 自受法具君，后学谌姆，功行已就。 复遇上圣，传以此书，其术乃成。 至於蒙恩超举神妙之迹，不可具言。 得吾书者，慎无自弃，皆十世积累，将有飞升之渐。 吾尝着其末，浅作《道经》三十五篇，行于人世，得者犹鲜。 况此枢机，皆上圣秘箓，行之诅可忽乎。 谨序。",
+      "translated_text": "**Preface to the Supreme Numinous Treasure Pure Brightness Method**\n\nThe *Pure Brightness Method* is a concealed scripture of the Supreme Clarity’s Mystic Capital and Jade Capital. In ancient times, the True Lord of Grand Yang, the Luminous King of Filial Dao, attained the supreme Dao through the radiance of filial virtue, illuminating the earth below. Thereupon, the Supreme Emperor of Supreme Clarity descended into the Hall of the Divine of Fusang Grotto, summoned the Luminous King, and expounded the Dharma to verify him, appointing him as the foremost disciple. He was titled the Great Perfected of the Numinous Treasure, the Jade Clarity’s Decreed Envoy, to deliver salvation in that era. Thus, the Perfected One vowed a great oath, pledging to dwell in the Eastern Limit to rescue all beings. This is known as the Numinous Treasure Savior from Suffering, the Heavenly Worthy—such was the fifteenth day of the eighth month in the first year of the Red Brightness era.\n\nIt is called *Pure Brightness*: \"pure\" means no darkness remains unilluminated, no speck of dust defiles; \"bright\" means all, from the foolish to the wise, look up to it. It is the gateway to liberation, the path to transcendence. Filial piety and fraternal duty serve as its standard; cultivation and refinement, its methods; and the secret essentials of practice, its core. Through accumulation and mutual enhancement, wisdom is honed, and only then does the Dao-qi become firm and complete, spirits and humans submit to service. In a single breath, one may grasp the profound principle.\n\nI once admired the winds of the Dao, seeking the teachings of masters far and wide, storing them in heart and mind with unwavering resolve. After receiving the full transmission of the method, I studied diligently, and my merit and practice reached fruition. Later, I encountered a supreme sage who transmitted this scripture to me, and thus its art was perfected. As for the wondrous traces of divine favor and transcendence bestowed upon me, they cannot be fully recounted.\n\nThose who obtain this book must not neglect themselves, for all are heirs to ten generations of accumulation, gradually ascending toward transcendence. I once composed a modest work, the *Scripture of the Dao* in thirty-five chapters, which circulated among the world, yet few attained it. How much more so this pivotal mechanism, the sacred register of the supreme sages—how could one dare treat it lightly?\n\nRespectfully inscribed.",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 426,
+      "start_sentence": 0,
+      "end_sentence": 19,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 12.591915130615234,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\方法类\\太上灵宝净明法序.txt",
+        "category": "方法类"
+      }
+    }
+  ]
+}

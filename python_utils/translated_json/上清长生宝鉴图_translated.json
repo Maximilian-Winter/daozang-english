@@ -1,0 +1,32 @@
+{
+  "source_id": "上清长生宝鉴图",
+  "source_file": "chunked_daozang\\上清长生宝鉴图.json",
+  "total_chunks": 1,
+  "total_original_chars": 129,
+  "total_translated_chars": 909,
+  "total_translation_time": 5.662967205047607,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞玄部\\灵图类\\上清长生宝鉴图.txt",
+    "category": "灵图类"
+  },
+  "full_translation": "*The Upper Clarity Precious Mirror of Long Life Diagram*\n\n**Scripture Title:** *The Upper Clarity Precious Mirror of Long Life Diagram*\nAuthor unknown, approximately dated to the Northern and Southern Dynasties or Sui-Tang period. One scroll.\n\n**Source Text:** *Daoist Canon of the Zhengtong Era*, *Dongxuan* Section, *Lingtu* (Numinous Diagrams) Category.\n\n---\n\n**The Upper Clarity Precious Mirror of Long Life Diagram**\n\n**Inscription on the Mirror:**\nA hundredfold-refined divine metal,\nNine inches in perfect roundness.\nFlanked by birds and beasts with wings,\nThe Seven Luminaries bestow numinosity.\nIts mirror encompasses Heaven and Earth,\nIts might subdues demonic spirits.\nAdorning the immortals of sacred mountains,\nIts wheel ascends to the Upper Clarity.\n\n**Mirror’s Verdant Ground**\n**Diagram and Talisman of the Luminous Mirror**\n\nHere ends *The Upper Clarity Precious Mirror of Long Life Diagram*.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "上清长生宝鉴图 经名：上清长生宝鉴图。 撰人不详，约出於南北朝或隋唐。 一卷。 底本出处：《正统道藏》洞玄部灵图类。 上清长生宝鉴图 镜铭曰 百炼神金，九寸圆形，禽兽翼卫，七曜通灵，鉴包天地，威伏魔精，名山仙佩，奔轮上清。 鉴绿地 明镜图符 上清长生宝鉴图竟",
+      "translated_text": "*The Upper Clarity Precious Mirror of Long Life Diagram*\n\n**Scripture Title:** *The Upper Clarity Precious Mirror of Long Life Diagram*\nAuthor unknown, approximately dated to the Northern and Southern Dynasties or Sui-Tang period. One scroll.\n\n**Source Text:** *Daoist Canon of the Zhengtong Era*, *Dongxuan* Section, *Lingtu* (Numinous Diagrams) Category.\n\n---\n\n**The Upper Clarity Precious Mirror of Long Life Diagram**\n\n**Inscription on the Mirror:**\nA hundredfold-refined divine metal,\nNine inches in perfect roundness.\nFlanked by birds and beasts with wings,\nThe Seven Luminaries bestow numinosity.\nIts mirror encompasses Heaven and Earth,\nIts might subdues demonic spirits.\nAdorning the immortals of sacred mountains,\nIts wheel ascends to the Upper Clarity.\n\n**Mirror’s Verdant Ground**\n**Diagram and Talisman of the Luminous Mirror**\n\nHere ends *The Upper Clarity Precious Mirror of Long Life Diagram*.",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 141,
+      "start_sentence": 0,
+      "end_sentence": 10,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 5.662967205047607,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\灵图类\\上清长生宝鉴图.txt",
+        "category": "灵图类"
+      }
+    }
+  ]
+}

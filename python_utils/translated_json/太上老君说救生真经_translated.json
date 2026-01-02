@@ -1,0 +1,32 @@
+{
+  "source_id": "太上老君说救生真经",
+  "source_file": "chunked_daozang\\太上老君说救生真经.json",
+  "total_chunks": 1,
+  "total_original_chars": 358,
+  "total_translated_chars": 2378,
+  "total_translation_time": 11.464651823043823,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞神部\\本文类\\太上老君说救生真经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "The *Scripture on Saving Lives as Spoken by the Most High Lord Lao*\n\n**Title:** *Scripture on Saving Lives as Spoken by the Most High Lord Lao*. The author is unknown, but it likely emerged between the Tang and Song dynasties. It falsely attributes its teachings to the Most High Lord Lao, expounding methods for reciting scriptures to preserve life and prolong existence. Comprising one scroll, the base text is drawn from the *Daoist Canon of the Zhengtong Era*, under the category of \"Original Texts\" in the *Dongshen* section.\n\n---\n\nAt that time, the Most High Lord Lao, accompanied by eight thousand disciples, was in the Hall of Lapis Lazuli and Seven Treasures within the Purple Tenuity Palace. There, he broadly expounded the wondrous Dharma, praising the men and women of the Middle Kingdom who, radiant as the sun and moon, upheld fasting, preserved mindfulness, and recited this true scripture. All unforeseen disasters and calamities were beseeched to dissolve; life was widely bestowed, years extended, and lifespans lengthened. A thousand grievances were harmonized, ten thousand evils concealed. Disasters did not arise, nor did misfortunes stir. Karmic obstructions sank away, while blessings and auspiciousness gathered in abundance.\n\nAt that time, the Most High Lord Lao commanded the Six Jia and Six Ding spirits to guard those who received this scripture, ensuring they forever remained free from misfortune and fault. Sickness would not invade them; the four seasons would pass in peace, and the eight solar terms in health. Bandits would hide, and malevolent spirits would cower in concealment. Should one recite this scripture seven times, fourteen times, or even twenty-one times, the merit would be boundless. Those who aspired to the Dao would all attain it, their ears and eyes ever sharp, their bodies strong and light.\n\nAt that time, the Most High Lord Lao spoke this true scripture to save lives and preserve destiny, ensuring perpetual freedom from disaster and obstruction. In every rebirth, one would encounter the Dao; in every lifetime, one would meet the true. Should one copy this scripture, receive and uphold it with reverence, they would forever enjoy peace, their lifespan extended. All should look up in homage, faithfully accept, and practice accordingly.\n\nHere ends the *Scripture on Saving Lives as Spoken by the Most High Lord Lao*.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上老君说救生真经 经名：太上老君说救生真经。 撰人不详，约出於唐宋间。 假托太上老君说诵经保命延生之法。 一卷。 底本出处：《正统道藏》洞神部本文类。 太上老君说救生真经 尔时，太上老君与八千徒众，在紫微宫中瑠璃七宝殿上，广说妙法赞叹世间中国男子女人，光如日月持斋存念真经，所有非灾横祸，尽乞消除，广布受生，延年益算，千冤和释，万恶潜藏，灾害不生，祸乱不作，罪障消沉，福祥臻集。 尔时，太上老君敕令六甲六丁守护受经之人，常使永无殃咎，疾病不侵，四时平善，八节康宁，盗贼潜藏，妖怪伏匿，念诵此经一七徧至二七徧乃至三七徧，功德无量，慕道皆成，常令耳目聪明，身强体轻。 尔时，太上老君说此真经，救生保命，永无灾障，生生遇道，世世逢真，若能抄写此经，受持供养，永保平安，寿算延长，咸仰皈依，信受奉行。 太上老君说救生真经竟",
+      "translated_text": "The *Scripture on Saving Lives as Spoken by the Most High Lord Lao*\n\n**Title:** *Scripture on Saving Lives as Spoken by the Most High Lord Lao*. The author is unknown, but it likely emerged between the Tang and Song dynasties. It falsely attributes its teachings to the Most High Lord Lao, expounding methods for reciting scriptures to preserve life and prolong existence. Comprising one scroll, the base text is drawn from the *Daoist Canon of the Zhengtong Era*, under the category of \"Original Texts\" in the *Dongshen* section.\n\n---\n\nAt that time, the Most High Lord Lao, accompanied by eight thousand disciples, was in the Hall of Lapis Lazuli and Seven Treasures within the Purple Tenuity Palace. There, he broadly expounded the wondrous Dharma, praising the men and women of the Middle Kingdom who, radiant as the sun and moon, upheld fasting, preserved mindfulness, and recited this true scripture. All unforeseen disasters and calamities were beseeched to dissolve; life was widely bestowed, years extended, and lifespans lengthened. A thousand grievances were harmonized, ten thousand evils concealed. Disasters did not arise, nor did misfortunes stir. Karmic obstructions sank away, while blessings and auspiciousness gathered in abundance.\n\nAt that time, the Most High Lord Lao commanded the Six Jia and Six Ding spirits to guard those who received this scripture, ensuring they forever remained free from misfortune and fault. Sickness would not invade them; the four seasons would pass in peace, and the eight solar terms in health. Bandits would hide, and malevolent spirits would cower in concealment. Should one recite this scripture seven times, fourteen times, or even twenty-one times, the merit would be boundless. Those who aspired to the Dao would all attain it, their ears and eyes ever sharp, their bodies strong and light.\n\nAt that time, the Most High Lord Lao spoke this true scripture to save lives and preserve destiny, ensuring perpetual freedom from disaster and obstruction. In every rebirth, one would encounter the Dao; in every lifetime, one would meet the true. Should one copy this scripture, receive and uphold it with reverence, they would forever enjoy peace, their lifespan extended. All should look up in homage, faithfully accept, and practice accordingly.\n\nHere ends the *Scripture on Saving Lives as Spoken by the Most High Lord Lao*.",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 367,
+      "start_sentence": 0,
+      "end_sentence": 10,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 11.464651823043823,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞神部\\本文类\\太上老君说救生真经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

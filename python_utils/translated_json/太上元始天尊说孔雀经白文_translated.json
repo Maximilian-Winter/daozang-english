@@ -1,0 +1,32 @@
+{
+  "source_id": "太上元始天尊说孔雀经白文",
+  "source_file": "chunked_daozang\\太上元始天尊说孔雀经白文.json",
+  "total_chunks": 1,
+  "total_original_chars": 88,
+  "total_translated_chars": 578,
+  "total_translation_time": 3.849562644958496,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏续道藏\\太上元始天尊说孔雀经白文.txt",
+    "category": "正统道藏续道藏"
+  },
+  "full_translation": "The Most High Primordial Heavenly Worthy expounds the *White Text of the Peacock Sutra*\n\n*Know the chime, arise—*\nHeavenly Worthy of Longevity and Life-Preservation,\nHeavenly Worthy of Great Compassion, Longevity, and Life-Preservation.\n\n*Enlightened mindfulness—*\nVast and wondrous, the profound and numinous chapter,\nCultivated over ten thousand kalpas by the Peacock King.\nThe Primordial Beginning, true master of scriptural teaching,\nExpounds the wondrous Dharma in broad dissemination.\n\nHeavenly Worthy of Great Compassion, Longevity, and Life-Preservation.\nAll [beings]...",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上元始天尊说孔雀经白文 知磬举 长生保命天尊， 大慈悲长生保命天尊。 明念。 大哉玄妙洞灵章，万劫修来孔雀王。 元始说经真教主，广演妙法为敷扬。 大慈悲长生保命天尊。 众□。",
+      "translated_text": "The Most High Primordial Heavenly Worthy expounds the *White Text of the Peacock Sutra*\n\n*Know the chime, arise—*\nHeavenly Worthy of Longevity and Life-Preservation,\nHeavenly Worthy of Great Compassion, Longevity, and Life-Preservation.\n\n*Enlightened mindfulness—*\nVast and wondrous, the profound and numinous chapter,\nCultivated over ten thousand kalpas by the Peacock King.\nThe Primordial Beginning, true master of scriptural teaching,\nExpounds the wondrous Dharma in broad dissemination.\n\nHeavenly Worthy of Great Compassion, Longevity, and Life-Preservation.\nAll [beings]...",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 105,
+      "start_sentence": 0,
+      "end_sentence": 8,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 3.849562644958496,
+      "metadata": {
+        "source_file": "dao\\正统道藏续道藏\\太上元始天尊说孔雀经白文.txt",
+        "category": "正统道藏续道藏"
+      }
+    }
+  ]
+}

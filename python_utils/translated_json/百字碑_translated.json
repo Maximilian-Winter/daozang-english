@@ -1,0 +1,32 @@
+{
+  "source_id": "百字碑",
+  "source_file": "chunked_daozang\\百字碑.json",
+  "total_chunks": 1,
+  "total_original_chars": 138,
+  "total_translated_chars": 875,
+  "total_translation_time": 5.5329508781433105,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\藏外\\百字碑.txt",
+    "category": "藏外"
+  },
+  "full_translation": "The *Hundred-Character Stele* by Lü Dongbin\n\nNurture qi, forget words, and guard;\nSubdue the heart to act as non-acting.\nIn movement and stillness, know the ancestral source—\nWith no affairs, whom else would you seek?\n\nThe true and constant must respond to things,\nYet in response, take care not to stray.\nNot straying, the nature abides of itself;\nNature abiding, qi returns of itself.\n\nQi returning, the elixir forms itself;\nWithin the crucible, Kan and Li unite.\nYin and yang arise in cyclic return—\nA single thunder roars through universal transformation.\n\nWhite clouds gather at the summit’s peak,\nSweet dew sprinkles Mount Sumeru.\nDrinking the wine of immortality alone,\nWho knows of this carefree wandering?\n\nSeated, listening to the stringless melody,\nIllumined, one fathoms the mechanism of creation.\nThese twenty verses in all—\nTruly, they are the ladder to heaven.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "《百字碑》吕洞宾 养气忘言守，降心为不为。 动静知祖宗，无事更寻谁？ 真常须应物，应物要不迷。 不迷性自住，性住气自回。 气回丹自结，壶中配坎离。 阴阳生返复，普化一声雷。 白云朝顶上，甘露洒须弥。 自饮长生酒，逍遥谁得知？ 坐听无弦曲，明通造化机。 都来二十句，端的上天梯。",
+      "translated_text": "The *Hundred-Character Stele* by Lü Dongbin\n\nNurture qi, forget words, and guard;\nSubdue the heart to act as non-acting.\nIn movement and stillness, know the ancestral source—\nWith no affairs, whom else would you seek?\n\nThe true and constant must respond to things,\nYet in response, take care not to stray.\nNot straying, the nature abides of itself;\nNature abiding, qi returns of itself.\n\nQi returning, the elixir forms itself;\nWithin the crucible, Kan and Li unite.\nYin and yang arise in cyclic return—\nA single thunder roars through universal transformation.\n\nWhite clouds gather at the summit’s peak,\nSweet dew sprinkles Mount Sumeru.\nDrinking the wine of immortality alone,\nWho knows of this carefree wandering?\n\nSeated, listening to the stringless melody,\nIllumined, one fathoms the mechanism of creation.\nThese twenty verses in all—\nTruly, they are the ladder to heaven.",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 181,
+      "start_sentence": 0,
+      "end_sentence": 10,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 5.5329508781433105,
+      "metadata": {
+        "source_file": "dao\\藏外\\百字碑.txt",
+        "category": "藏外"
+      }
+    }
+  ]
+}

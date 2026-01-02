@@ -1,0 +1,32 @@
+{
+  "source_id": "太上说酆都拔苦愈乐妙经",
+  "source_file": "chunked_daozang\\太上说酆都拔苦愈乐妙经.json",
+  "total_chunks": 1,
+  "total_original_chars": 317,
+  "total_translated_chars": 2264,
+  "total_translation_time": 11.261826753616333,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞玄部\\本文类\\太上说酆都拔苦愈乐妙经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "**The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu**\n\n**Sutra Title:** *The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu*. The compiler is unknown, though it likely emerged between the Tang and Song dynasties. It purports to record the scripture preached by the Heavenly Worthy of Deliverance from Suffering and Attainment of Bliss for the salvation of all beings. One fascicle.\n\n**Source Text:** *Daoist Canon of the Zhengtong Era*, Dongxuan Section, Category of Original Texts.\n\n---\n\n**The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu**\n\nAt that time, the Heavenly Worthy of Deliverance from Suffering and Attainment of Bliss resided in the Eastern Ultimate Palace of the Upper Realm of Fengdu, radiating a five-colored halo of perfect light that illumined the ten directions of the cosmos. Within the thirty-eight thousand hells and twenty-seven thousand dark prisons of Fengdu, he beheld boundless suffering beings—ascending and descending the mountains of knives, turning ten thousand times and circling a thousand, fainting in despair and wailing in grief. All plunged into cauldrons of searing coals and boiling broth, endlessly revolving in the wheel of rebirth, ceaseless day and night, dying ten thousand deaths without respite.\n\nThus, the Heavenly Worthy, moved by boundless compassion, took pity on all beings and expounded for them *The Wondrous Sutra of Universal Salvation in Fengdu*. By its power, the destitute souls burdened with sins shall attain rebirth in the Vermilion Mound, ascend to the immortal realms, and be transformed into celestial beings. May the mountains of knives become jeweled thrones, the forests of swords blossom into flowering groves. May the Six Paths and Three Wretched Realms dissolve into ashes, and all boundless grave offenses be reduced to dust. Across kalpas as numerous as the sands of the Ganges, may the imperial grace grant absolution. Turn your hearts to the true Dao, and ascend in ethereal splendor to the Purple Tenuity.\n\n**Here ends *The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu*.**",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上说酆都拔苦愈乐妙经 经名：太上说酆都拔苦愈乐妙经。 撰人不详，似出於唐宋间。 假托拔苦愈乐天尊说超度众生经文。 一卷。 底本出处：《正统道藏》洞玄部本文类。 太上说酆都拔苦愈乐妙经 尔时，拔苦愈乐天尊，在酆都上境东极宫中，放五色圆光，照十方世界，酆都三万八千狱、二万七千幽牢之中，见无量受苦众生，往来刀山之上，万转千回，闷绝哀哭，俱入炉炭镬汤之中，展转轮回，不舍昼夜，万生万死，无有休息。 是故天尊慈惠，哀愍众生，为汝演说酆都普济妙经。 普度受罪穷魂，获生朱陵，上登仙境，仙化成人，愿刀山成宝座，剑树化骞林，六道与三涂，火化皆消散，无边诸大罪，普悉化为尘，历劫河沙界，皇恩得赦除，回心归正道，缥渺上紫微。 太上说酆都拔苦愈乐妙经竟",
+      "translated_text": "**The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu**\n\n**Sutra Title:** *The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu*. The compiler is unknown, though it likely emerged between the Tang and Song dynasties. It purports to record the scripture preached by the Heavenly Worthy of Deliverance from Suffering and Attainment of Bliss for the salvation of all beings. One fascicle.\n\n**Source Text:** *Daoist Canon of the Zhengtong Era*, Dongxuan Section, Category of Original Texts.\n\n---\n\n**The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu**\n\nAt that time, the Heavenly Worthy of Deliverance from Suffering and Attainment of Bliss resided in the Eastern Ultimate Palace of the Upper Realm of Fengdu, radiating a five-colored halo of perfect light that illumined the ten directions of the cosmos. Within the thirty-eight thousand hells and twenty-seven thousand dark prisons of Fengdu, he beheld boundless suffering beings—ascending and descending the mountains of knives, turning ten thousand times and circling a thousand, fainting in despair and wailing in grief. All plunged into cauldrons of searing coals and boiling broth, endlessly revolving in the wheel of rebirth, ceaseless day and night, dying ten thousand deaths without respite.\n\nThus, the Heavenly Worthy, moved by boundless compassion, took pity on all beings and expounded for them *The Wondrous Sutra of Universal Salvation in Fengdu*. By its power, the destitute souls burdened with sins shall attain rebirth in the Vermilion Mound, ascend to the immortal realms, and be transformed into celestial beings. May the mountains of knives become jeweled thrones, the forests of swords blossom into flowering groves. May the Six Paths and Three Wretched Realms dissolve into ashes, and all boundless grave offenses be reduced to dust. Across kalpas as numerous as the sands of the Ganges, may the imperial grace grant absolution. Turn your hearts to the true Dao, and ascend in ethereal splendor to the Purple Tenuity.\n\n**Here ends *The Supreme Venerable Sovereign’s Sutra of Deliverance from Suffering and Attainment of Bliss in Fengdu*.**",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 320,
+      "start_sentence": 0,
+      "end_sentence": 10,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 11.261826753616333,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\本文类\\太上说酆都拔苦愈乐妙经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "source_id": "太上元始天尊说续命妙经",
+  "source_file": "chunked_daozang\\太上元始天尊说续命妙经.json",
+  "total_chunks": 1,
+  "total_original_chars": 397,
+  "total_translated_chars": 2555,
+  "total_translation_time": 13.241497039794922,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞真部\\本文类\\太上元始天尊说续命妙经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "The *Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy*\n\n**Scripture Title:** *Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy*\n**Author:** Unknown, approximately composed between the Tang and Song dynasties. Pseudepigraphically attributed to the Primordial Heavenly Worthy, who expounds it to the Most High Dao Lord, exhorting people to recite the scripture to dispel calamities and prolong life. One scroll.\n\n**Source of Base Text:** *Daoist Canon of the Zhengtong Era*, *Dongzhen* Section, *Benwen* Category.\n\n---\n\n**The Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy**\n\nAt that time, the Primordial Heavenly Worthy addressed the Most High Dao Lord, saying: \"The sentient beings of the Three Realms drift in the sea of suffering, with no liberation. How can you bear this? You must diligently uphold and practice my Dharma, universally saving and delivering them.\"\n\nThe Most High Dao Lord, having received the command, dared not conceal his true intent. If there are sentient beings in peril or afflicted by illness, they should recite this scripture and invoke the Great Compassionate, Great Merciful, Great Benevolent Perfected One, and the Great Compassionate, Great Merciful Perfected One Who Saves from Suffering. Thereby, they shall escape suffering, attain lasting liberation, forever break free from karmic entanglements, prolong life, renew their aged years, and all calamities and hardships shall be extinguished.\n\nThe Most High Dao Lord proclaimed a hymn, saying:\n\nThe Two Perfected Ones of Great Compassion,\nCan save the suffering of the Three Realms.\nRadiating light to illuminate the world,\nHell’s torments all cease.\n\nKnife-mountains rise towering,\nCauldron-waters boil fiercely.\nWith sincere mind, invoke the Perfected Ones,\nSinful souls resolve past grievances.\n\nIllness and hardship bring many woes,\nBeyond words of disaster and distress.\nAlas! The Five Spirits are harmed,\nThe Perfected Ones pity their bitter pain.\n\nDevout faithful men and women,\nMust wholeheartedly surrender.\nConstantly invoke the Two Perfected Ones,\nTo escape suffering and avoid sinking sorrow.\n\nIllness and calamities dispelled,\nEvil demons dare not encroach.\nDay and night, the mind unwavering,\nLiberation secures your entire being.\n\nWith courage, dedicate the merit,\nTogether return to the Forest of Seven Treasures.\n\n**Thus concludes the *Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy*.**",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上元始天尊说续命妙经 经名：太上元始天尊说续命妙经。 撰人不详，约出於唐宋间。 假托，元始天尊为太上道君说，劝人诵经消灾延寿。 一卷。 底本出处：《正统道藏》洞真部本文类。 太上元始天尊说续命妙经 尔时，元始天尊告太上道君曰：三界众生，漂流苦海，无有解脱，汝岂忍受，宜须精勤奉行我法，普该救度。 太上道君既奉告命，不敢藏情，若有众生危厄疾病，当诵此经，称大慈大悲大惠真人，大慈大悲救苦真人，即得离苦，长得解脱，永离婴缠，长生益寿，老命更延，一切厄难，皆得消灭。 太上道君宣说颂曰： 大慈二真人，能救三界苦。 放光照世间，地狱悉停住。 刀山高巍巍，镬汤飞炎炎。 至心念真人，罪魂解宿冤。 疾病多苦厄，非灾难可言。 痛哉伤五神，真人愍悲辛。 清信善男女，归命须至心。 常念二真人，离苦免忧沈。 疾病消众厄，邪魔不敢侵。 昼夜心不离，解脱全尔身。 勇猛发回向，同归七宝林。 太上元始天尊说续命妙经竟",
+      "translated_text": "The *Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy*\n\n**Scripture Title:** *Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy*\n**Author:** Unknown, approximately composed between the Tang and Song dynasties. Pseudepigraphically attributed to the Primordial Heavenly Worthy, who expounds it to the Most High Dao Lord, exhorting people to recite the scripture to dispel calamities and prolong life. One scroll.\n\n**Source of Base Text:** *Daoist Canon of the Zhengtong Era*, *Dongzhen* Section, *Benwen* Category.\n\n---\n\n**The Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy**\n\nAt that time, the Primordial Heavenly Worthy addressed the Most High Dao Lord, saying: \"The sentient beings of the Three Realms drift in the sea of suffering, with no liberation. How can you bear this? You must diligently uphold and practice my Dharma, universally saving and delivering them.\"\n\nThe Most High Dao Lord, having received the command, dared not conceal his true intent. If there are sentient beings in peril or afflicted by illness, they should recite this scripture and invoke the Great Compassionate, Great Merciful, Great Benevolent Perfected One, and the Great Compassionate, Great Merciful Perfected One Who Saves from Suffering. Thereby, they shall escape suffering, attain lasting liberation, forever break free from karmic entanglements, prolong life, renew their aged years, and all calamities and hardships shall be extinguished.\n\nThe Most High Dao Lord proclaimed a hymn, saying:\n\nThe Two Perfected Ones of Great Compassion,\nCan save the suffering of the Three Realms.\nRadiating light to illuminate the world,\nHell’s torments all cease.\n\nKnife-mountains rise towering,\nCauldron-waters boil fiercely.\nWith sincere mind, invoke the Perfected Ones,\nSinful souls resolve past grievances.\n\nIllness and hardship bring many woes,\nBeyond words of disaster and distress.\nAlas! The Five Spirits are harmed,\nThe Perfected Ones pity their bitter pain.\n\nDevout faithful men and women,\nMust wholeheartedly surrender.\nConstantly invoke the Two Perfected Ones,\nTo escape suffering and avoid sinking sorrow.\n\nIllness and calamities dispelled,\nEvil demons dare not encroach.\nDay and night, the mind unwavering,\nLiberation secures your entire being.\n\nWith courage, dedicate the merit,\nTogether return to the Forest of Seven Treasures.\n\n**Thus concludes the *Marvelous Scripture of Life-Prolonging Spoken by the Most High Primordial Heavenly Worthy*.**",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 410,
+      "start_sentence": 0,
+      "end_sentence": 21,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 13.241497039794922,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞真部\\本文类\\太上元始天尊说续命妙经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

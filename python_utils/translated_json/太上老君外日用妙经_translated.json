@@ -1,0 +1,32 @@
+{
+  "source_id": "太上老君外日用妙经",
+  "source_file": "chunked_daozang\\太上老君外日用妙经.json",
+  "total_chunks": 1,
+  "total_original_chars": 284,
+  "total_translated_chars": 1722,
+  "total_translation_time": 8.573911666870117,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞神部\\本文类\\太上老君外日用妙经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "*The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices*\n\n**Scripture Title:** *The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices*. One scroll. Author unknown. Base text from the *Daoist Canon of the Zhengtong Era* (Ming Dynasty), *Section of Numinous Writings*, category of *Original Texts*.\n\n---\n\n**The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices**\n\nRevere Heaven and Earth, honor the sun and moon.\nFear the laws of the state, follow the kingly Way, and be filial to parents.\nBe humble toward superiors, harmonious with inferiors.\nDo good deeds, cease evil ones.\nEncourage others in learning, dissuade them from wrongdoing.\nThe wise know peril; the full, overflow.\nStillness brings constant peace; frugality, constant sufficiency.\nCaution spares worry; forbearance, disgrace.\nShun extravagance, pursue truth and substance.\nConceal others’ faults, extol their virtues.\nPractice convenience, harmonize with neighbors.\nDraw near to the worthy and good, distance yourself from sensual indulgence.\nThe poor guard their lot; the rich bestow kindness.\nAct with impartiality, never rely on power.\nAlways restrain the self, never envy or encroach.\nIn youth, avoid greed; root out cunning and deceit.\nResolve grievances when encountered, accumulate good deeds.\nKeep promises without fail, speak with sincerity.\nRemember the orphaned and widowed, relieve the poor and destitute.\nSave those in peril, accumulate hidden virtue.\nPractice kindness and mercy, refrain from taking life.\nHeed loyal words, never deceive the heart.\nFollow these practices, and you may ascend beyond.\n\n**End of *The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices***",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上老君外日用妙经 经名：太上老君外日用经。 一卷。 作者不详。 底本出处：明《正统道藏》洞神部本文类。 太上老君外日用妙经 敬天地，重日月。 惧国法，依王道，孝父母。 上谦让，下和睦。 好事行，恶事止。 成人学，破人断。 高知危，满知溢。 静常安，俭常足。 慎无忧，忍无辱。 去奢华，务真实。 掩人非，扬人德。 行方便，和邻里。 亲贤善，远声色。 贫守分，富施惠。 行平等，休倚势。 长克己，莫嫉拓。 少怪贪，除狡猾。 逢冤解，积人行。 许不违，话有信。 念孤寡，济贫困。 救危难，积阴德。 行慈惠，休杀生。 听忠言，莫欺心。 依此行，可超升。 太上老君外日用妙经竟",
+      "translated_text": "*The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices*\n\n**Scripture Title:** *The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices*. One scroll. Author unknown. Base text from the *Daoist Canon of the Zhengtong Era* (Ming Dynasty), *Section of Numinous Writings*, category of *Original Texts*.\n\n---\n\n**The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices**\n\nRevere Heaven and Earth, honor the sun and moon.\nFear the laws of the state, follow the kingly Way, and be filial to parents.\nBe humble toward superiors, harmonious with inferiors.\nDo good deeds, cease evil ones.\nEncourage others in learning, dissuade them from wrongdoing.\nThe wise know peril; the full, overflow.\nStillness brings constant peace; frugality, constant sufficiency.\nCaution spares worry; forbearance, disgrace.\nShun extravagance, pursue truth and substance.\nConceal others’ faults, extol their virtues.\nPractice convenience, harmonize with neighbors.\nDraw near to the worthy and good, distance yourself from sensual indulgence.\nThe poor guard their lot; the rich bestow kindness.\nAct with impartiality, never rely on power.\nAlways restrain the self, never envy or encroach.\nIn youth, avoid greed; root out cunning and deceit.\nResolve grievances when encountered, accumulate good deeds.\nKeep promises without fail, speak with sincerity.\nRemember the orphaned and widowed, relieve the poor and destitute.\nSave those in peril, accumulate hidden virtue.\nPractice kindness and mercy, refrain from taking life.\nHeed loyal words, never deceive the heart.\nFollow these practices, and you may ascend beyond.\n\n**End of *The Wondrous Scripture of the Supreme Lord Lao’s External Daily Practices***",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 268,
+      "start_sentence": 0,
+      "end_sentence": 29,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 8.573911666870117,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞神部\\本文类\\太上老君外日用妙经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

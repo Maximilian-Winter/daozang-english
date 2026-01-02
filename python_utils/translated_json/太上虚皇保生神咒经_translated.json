@@ -1,0 +1,32 @@
+{
+  "source_id": "太上虚皇保生神咒经",
+  "source_file": "chunked_daozang\\太上虚皇保生神咒经.json",
+  "total_chunks": 1,
+  "total_original_chars": 394,
+  "total_translated_chars": 2551,
+  "total_translation_time": 12.300761461257935,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞玄部\\本文类\\太上虚皇保生神咒经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "**The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life**\n\n**Scripture Title:** *The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life*. Author unknown, likely composed during the Song or Yuan dynasties. Recitation of the Four Palaces’ incantations invokes the Supreme Void Sovereign and the deities of the Five Directions to dispel calamities and safeguard life. One fascicle.\n\n**Source:** *Daoist Canon of the Zhengtong Era*, *Dongxuan Section*, *Category of Original Texts*.\n\n---\n\n**The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life**\n\nThe Supreme Void Sovereign,\nOpens and disperses the Jade Court,\nGolden chambers radiant,\nEmerald terraces lush and verdant.\n\nI establish the Three Ways,\nTo vanquish demons and quicken life.\nI transcend death,\nAnd likewise transcend birth.\n\nAttaining longevity and freedom,\nReversing age to return to infancy,\nThe hun and po are refined,\nThe Five Spirits find peace.\n\nThe whirlwind chariot’s wheels turn,\nNorthward to pay homage to the Jade Clarity,\nAscending into the Great Void,\nMerging brilliance with the sun.\n\nThus one becomes a Perfected,\nUniting with the Five Thearchs,\nProclaimed by the Three Primes,\nAll spirits heed the decree.\n\nThe Cavern Mystery Samadhi,\nBoundless true numina,\nLegions of immortals attend and guard,\nTheir names inscribed in the Jade Clarity.\n\nThe Cavern Truth and Jade Void,\nThe Void within the Void,\nThe Dao within the Dao,\nSpirit transforms in an instant.\n\nThe Cavern Spirit’s numinous response,\nManifests in dharmic signs and deeds,\nDriving away evil and eradicating wickedness,\nRevolving the celestial sphere.\n\n**East:** Protecting life,\nThe Azure Youth’s divine spirit,\nThe Orthodox Unity guards the hun,\nEnsuring longevity and prosperity.\n\n**South:** Protecting life,\nConsolidating qi with the Vermilion Spirit,\nMyriad spirits untransgressed,\nGranting me enduring tranquility.\n\n**West:** Protecting life,\nThe White Spirit attends the po,\nDispelling malevolent qi,\nBringing me good fortune and success.\n\n**North:** Protecting life,\nFacilitating the primordial essence,\nThe Five Qi’s true talisman,\nEnsures my eternal flourishing.\n\n**Center:** Protecting life,\nGoverning my bodily form,\nSoaring freely,\nHeaven and Earth unite as one.\n\nRoaming and observing the Great Void,\nAscending to pay homage to the Jade Capital,\nBelow, expelling demonic influences,\nBestowing blessings upon all beings.\n\n**Here ends *The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life*.**",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上虚皇保生神咒经 经名：太上虚皇保生神咒经。 撰人不详，似出於宋元。 念四官咒语求太上虚皇及五方神灵消灾保生。 一卷。 底本出处：《正统道藏》洞玄部本文类。 太上虚皇保生神咒经 太上虚皇，开散玉庭，金房晃曜，翠台郁青。 我设三道，灭鬼生灵，我能无死，亦能无生。 长生自在，迥老返婴，魂魄受炼，五神安宁。 回飙车轮，北谒玉清，升入太无，与日合明。 遂成真人，五帝合并，三元所告，万神咸听。 洞玄三昧，无量真灵，群仙侍卫，名列玉清。 洞真玉虚，无中之无，道中之道，神化须臾。 洞神灵应，法象有为，驱邪灭恶，运转璇玑。 东方保生，青童神灵，正一守魂，克保昌龄。 南方保生，固气赤灵，万神无越，使我长宁。 西方保生，侍魄白灵，辟除妖气，令我利亨。 北方保生，通利元精，五气真符，使臣长荣。 中央保生，主我身形，飞行自在，天地齐并。 游观太虚，上朝玉京，下袪祆魅，福惠群生。 太上虚皇保生神咒经竟",
+      "translated_text": "**The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life**\n\n**Scripture Title:** *The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life*. Author unknown, likely composed during the Song or Yuan dynasties. Recitation of the Four Palaces’ incantations invokes the Supreme Void Sovereign and the deities of the Five Directions to dispel calamities and safeguard life. One fascicle.\n\n**Source:** *Daoist Canon of the Zhengtong Era*, *Dongxuan Section*, *Category of Original Texts*.\n\n---\n\n**The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life**\n\nThe Supreme Void Sovereign,\nOpens and disperses the Jade Court,\nGolden chambers radiant,\nEmerald terraces lush and verdant.\n\nI establish the Three Ways,\nTo vanquish demons and quicken life.\nI transcend death,\nAnd likewise transcend birth.\n\nAttaining longevity and freedom,\nReversing age to return to infancy,\nThe hun and po are refined,\nThe Five Spirits find peace.\n\nThe whirlwind chariot’s wheels turn,\nNorthward to pay homage to the Jade Clarity,\nAscending into the Great Void,\nMerging brilliance with the sun.\n\nThus one becomes a Perfected,\nUniting with the Five Thearchs,\nProclaimed by the Three Primes,\nAll spirits heed the decree.\n\nThe Cavern Mystery Samadhi,\nBoundless true numina,\nLegions of immortals attend and guard,\nTheir names inscribed in the Jade Clarity.\n\nThe Cavern Truth and Jade Void,\nThe Void within the Void,\nThe Dao within the Dao,\nSpirit transforms in an instant.\n\nThe Cavern Spirit’s numinous response,\nManifests in dharmic signs and deeds,\nDriving away evil and eradicating wickedness,\nRevolving the celestial sphere.\n\n**East:** Protecting life,\nThe Azure Youth’s divine spirit,\nThe Orthodox Unity guards the hun,\nEnsuring longevity and prosperity.\n\n**South:** Protecting life,\nConsolidating qi with the Vermilion Spirit,\nMyriad spirits untransgressed,\nGranting me enduring tranquility.\n\n**West:** Protecting life,\nThe White Spirit attends the po,\nDispelling malevolent qi,\nBringing me good fortune and success.\n\n**North:** Protecting life,\nFacilitating the primordial essence,\nThe Five Qi’s true talisman,\nEnsures my eternal flourishing.\n\n**Center:** Protecting life,\nGoverning my bodily form,\nSoaring freely,\nHeaven and Earth unite as one.\n\nRoaming and observing the Great Void,\nAscending to pay homage to the Jade Capital,\nBelow, expelling demonic influences,\nBestowing blessings upon all beings.\n\n**Here ends *The Supreme Void Sovereign’s Scripture of Divine Incantations for Protecting Life*.**",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 386,
+      "start_sentence": 0,
+      "end_sentence": 21,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 12.300761461257935,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\本文类\\太上虚皇保生神咒经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

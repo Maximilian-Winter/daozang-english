@@ -1,0 +1,32 @@
+{
+  "source_id": "太上老君说了心经",
+  "source_file": "chunked_daozang\\太上老君说了心经.json",
+  "total_chunks": 1,
+  "total_original_chars": 266,
+  "total_translated_chars": 1724,
+  "total_translation_time": 8.9758939743042,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞神部\\本文类\\太上老君说了心经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "The Most High Lord Lao Spoke the Heart Sutra\n\nThe *Taishang Laojun Shuole Xinjing* (The Most High Lord Lao Spoke the Heart Sutra). Author unknown, approximately dated to the Tang dynasty. One scroll. Source text: *Zhengtong Daozang* (Daoist Canon of the Zhengtong Era), *Dongshen* Section, *Benwen* Category.\n\n**The Most High Lord Lao Spoke the Heart Sutra**\n\nIn cultivating the Dao, first observe the heart-mind.\nThe heart-mind governs the spirit; movement and stillness follow the heart-mind.\nWhen the heart-mind moves, there is no stillness; when it does not move, one attains the true.\nThe heart-mind is the root of misfortune, the heart-mind is the origin of the Dao.\nNeither moving nor still, neither conceiving nor abiding.\nWithout heart-mind, without movement—yet if there is movement, it arises from the heart-mind.\nUnderstanding the heart-mind’s true nature, understanding the nature’s true heart-mind.\nThe heart-mind abides nowhere; where there is abiding, there is no heart-mind.\nUnderstanding non-attachment, non-attachment turns to the true.\nEmptiness, the emptiness of emptiness—emptiness itself attains the true.\n\nLord Lao said: From kalpas without measure, I observed the heart-mind and attained the Dao, reaching even to emptiness and nothingness—what was there to gain? For the sake of all sentient beings, I reluctantly name it \"attaining the Dao.\"\n\nLord Lao said: I observe that sentient beings, not understanding their heart-minds, labor in vain through endless kalpas, exhausting their spirits in futility. Without understanding the heart-mind, they sink into eternal perdition. Follow my sacred teachings and roam freely, embracing the true.\n\nHere ends *The Most High Lord Lao Spoke the Heart Sutra*.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "太上老君说了心经 经名：太上老君说了心经。 撰人不详，约出唐代。 一卷。 底本出处：《正统道藏》洞神部本文类。 太上老君说了心经 若夫修道，先观其心。 心为神主，动静从心。 心动无静，不动了真。 心为祸本，心为道宗。 不动不静，无想无存。 无心无动，有动从心。 了心真性，了性真心。 心无所住，住无所心。 了无执住，无执转真。 空无空处，空处了真。 老君曰：吾从无量劫来观心得道，乃至虚无，有何所得。 为诸众生，强名得道。 老君曰：吾观众生不了其心，徒劳浩劫，虚役其神，於心无了，永劫沉沦。 依吾圣教，逍遥抱真。 太上老君说了心经竟",
+      "translated_text": "The Most High Lord Lao Spoke the Heart Sutra\n\nThe *Taishang Laojun Shuole Xinjing* (The Most High Lord Lao Spoke the Heart Sutra). Author unknown, approximately dated to the Tang dynasty. One scroll. Source text: *Zhengtong Daozang* (Daoist Canon of the Zhengtong Era), *Dongshen* Section, *Benwen* Category.\n\n**The Most High Lord Lao Spoke the Heart Sutra**\n\nIn cultivating the Dao, first observe the heart-mind.\nThe heart-mind governs the spirit; movement and stillness follow the heart-mind.\nWhen the heart-mind moves, there is no stillness; when it does not move, one attains the true.\nThe heart-mind is the root of misfortune, the heart-mind is the origin of the Dao.\nNeither moving nor still, neither conceiving nor abiding.\nWithout heart-mind, without movement—yet if there is movement, it arises from the heart-mind.\nUnderstanding the heart-mind’s true nature, understanding the nature’s true heart-mind.\nThe heart-mind abides nowhere; where there is abiding, there is no heart-mind.\nUnderstanding non-attachment, non-attachment turns to the true.\nEmptiness, the emptiness of emptiness—emptiness itself attains the true.\n\nLord Lao said: From kalpas without measure, I observed the heart-mind and attained the Dao, reaching even to emptiness and nothingness—what was there to gain? For the sake of all sentient beings, I reluctantly name it \"attaining the Dao.\"\n\nLord Lao said: I observe that sentient beings, not understanding their heart-minds, labor in vain through endless kalpas, exhausting their spirits in futility. Without understanding the heart-mind, they sink into eternal perdition. Follow my sacred teachings and roam freely, embracing the true.\n\nHere ends *The Most High Lord Lao Spoke the Heart Sutra*.",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 277,
+      "start_sentence": 0,
+      "end_sentence": 20,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 8.9758939743042,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞神部\\本文类\\太上老君说了心经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

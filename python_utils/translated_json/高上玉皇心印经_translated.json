@@ -1,0 +1,32 @@
+{
+  "source_id": "高上玉皇心印经",
+  "source_file": "chunked_daozang\\高上玉皇心印经.json",
+  "total_chunks": 1,
+  "total_original_chars": 357,
+  "total_translated_chars": 1885,
+  "total_translation_time": 5.068316221237183,
+  "model_used": "mistralai/ministral-14b-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞真部\\本文类\\高上玉皇心印经.txt",
+    "category": "本文类"
+  },
+  "full_translation": "**The Supreme Jade Emperor’s Heart-Seal Scripture**\n*(Scripture Title: The Supreme Jade Emperor’s Heart-Seal Scripture)*\n*Author unknown; likely composed between the Tang and Song dynasties. A hymn to the methods of Internal Alchemy. One scroll. Source text: The *Zhengtong Daozang*, Dunzhen Section, *Benwen* Category.*\n\n---\n\n**The Supreme Jade Emperor’s Heart-Seal Scripture**\n\nThree supreme elixirs: spirit, qi, and essence.\nVague and indistinct, dim and obscure.\nPreserve the void while holding to the real—\nIn an instant, perfection is achieved.\n\nThe wind returns, blending—\nA hundred days’ work yields miraculous power.\nSilent homage to the Celestial Sovereign—\nIn a decade, ascension soars.\n\nThe wise may grasp it easily;\nThe ignorant find it hard to practice.\n\nTread the celestial light, breathe to nurture purity.\nEnter the dark, return to the womb—\nAs if lost, as if present.\nEndless and unbroken, rooted deep and firm.\n\nEach has his essence; essence unites with spirit.\nSpirit unites with qi; qi unites with the True.\nWithout attaining the True, all else is mere pretension.\n\nSpirit can penetrate stone, spirit can shift form.\nEnter water—no drowning;\nEnter fire—no burning.\n\nSpirit follows form to live, essence swells with qi.\nUnwithering, unbroken—\nLike pine and cypress, evergreen.\n\nOne principle in three elixirs—\nWondrous beyond hearing.\n\nWhen gathered, it exists;\nWhen scattered, it vanishes.\n\nThe seven orifices connect—\nEach orifice radiant.\n\nOn holy days and holy months,\nIlluminating the Golden Court.\n\nOnce attained, forever held—\nThe body naturally lightens.\n\n*Taihe* overflows—\nBones dissolve into cold jade.\n\nObtain the elixir, and life is eternal;\nFail, and all is lost.\n\nThe elixir dwells within the body—\nNeither white nor green.\n\nRecite it ten thousand times—\nThe wondrous principle reveals itself.\n\n*The Supreme Jade Emperor’s Heart-Seal Scripture ends.*",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "高上玉皇心印经 经名：高上玉皇心印经。 撰人不详，约出於唐宋间。 歌颂内丹修炼法诀。 一卷。 底本出处：《正统道藏》洞真部本文类。 高上玉皇心印经 上药三品，神与气精。 恍恍惚惚，杳杳冥冥。 存无守有，顷刻而成。 回风混合，百日功灵。 默朝上帝，一纪飞升。 知者易悟，昧者难行。 履践天光，呼吸育清。 出玄入牝，若亡若存。 绵绵不绝，固蒂深根。 人各有精，精合其神。 神合其气，气合其真。 不得其真，皆是强名。 神能入石，神能飞形。 入水不溺，入火不焚。 神依形生，精依气盈。 不凋不残，松柏青青。 三品一理，妙不可听。 其聚则有，其散则零。 七窍相通，窍窍光明。 圣日圣月，照耀金庭。 一得永得，自然身轻。 太和充溢，骨散寒琼。 得丹则灵，不得则倾。 丹在身中，非白非青。 诵之万徧，妙理自明。 高上玉皇心印经竟",
+      "translated_text": "**The Supreme Jade Emperor’s Heart-Seal Scripture**\n*(Scripture Title: The Supreme Jade Emperor’s Heart-Seal Scripture)*\n*Author unknown; likely composed between the Tang and Song dynasties. A hymn to the methods of Internal Alchemy. One scroll. Source text: The *Zhengtong Daozang*, Dunzhen Section, *Benwen* Category.*\n\n---\n\n**The Supreme Jade Emperor’s Heart-Seal Scripture**\n\nThree supreme elixirs: spirit, qi, and essence.\nVague and indistinct, dim and obscure.\nPreserve the void while holding to the real—\nIn an instant, perfection is achieved.\n\nThe wind returns, blending—\nA hundred days’ work yields miraculous power.\nSilent homage to the Celestial Sovereign—\nIn a decade, ascension soars.\n\nThe wise may grasp it easily;\nThe ignorant find it hard to practice.\n\nTread the celestial light, breathe to nurture purity.\nEnter the dark, return to the womb—\nAs if lost, as if present.\nEndless and unbroken, rooted deep and firm.\n\nEach has his essence; essence unites with spirit.\nSpirit unites with qi; qi unites with the True.\nWithout attaining the True, all else is mere pretension.\n\nSpirit can penetrate stone, spirit can shift form.\nEnter water—no drowning;\nEnter fire—no burning.\n\nSpirit follows form to live, essence swells with qi.\nUnwithering, unbroken—\nLike pine and cypress, evergreen.\n\nOne principle in three elixirs—\nWondrous beyond hearing.\n\nWhen gathered, it exists;\nWhen scattered, it vanishes.\n\nThe seven orifices connect—\nEach orifice radiant.\n\nOn holy days and holy months,\nIlluminating the Golden Court.\n\nOnce attained, forever held—\nThe body naturally lightens.\n\n*Taihe* overflows—\nBones dissolve into cold jade.\n\nObtain the elixir, and life is eternal;\nFail, and all is lost.\n\nThe elixir dwells within the body—\nNeither white nor green.\n\nRecite it ten thousand times—\nThe wondrous principle reveals itself.\n\n*The Supreme Jade Emperor’s Heart-Seal Scripture ends.*",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 374,
+      "start_sentence": 0,
+      "end_sentence": 32,
+      "model_used": "mistralai/ministral-14b-2512",
+      "translation_time": 5.068316221237183,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞真部\\本文类\\高上玉皇心印经.txt",
+        "category": "本文类"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "source_id": "上清辖落七元符",
+  "source_file": "chunked_daozang\\上清辖落七元符.json",
+  "total_chunks": 2,
+  "total_original_chars": 300,
+  "total_translated_chars": 1966,
+  "total_translation_time": 11.450233936309814,
+  "model_used": "mistralai/mistral-large-2512",
+  "metadata": {
+    "source_file": "dao\\正统道藏洞玄部\\神符类\\上清辖落七元符.txt",
+    "category": "神符类"
+  },
+  "full_translation": "The *Shangqing Huoluo Qiyuan Fu* (Supreme Clarity Talismans of the Seven Luminaries of Expansive Liberation)\n\n**Scripture Title:** *Shangqing Huoluo Qiyuan Fu* (Supreme Clarity Talismans of the Seven Luminaries of Expansive Liberation). Author unknown, approximately dating to the Eastern Jin dynasty. A significant talismanic text of the early Supreme Clarity tradition. Comprising one scroll.\n\n**Source of Base Text:** *Daoist Canon of the Zhengtong Era*, *Dongxuan* Section, *Shenfu* (Divine Talismans) Category.\n\n---\n\nThe *Shangqing Huoluo Qiyuan Fu* (Supreme Clarity Talismans of the Seven Luminaries of Expansive Liberation): This single talisman is to be inscribed in seal script and worn on the person. It originally takes the sun, moon, and five planets as the Seven Luminaries, with an additional six talismans that appear to be those from the *Xiaomo Jing* (Scripture of Dispelling Demons). However, the *Xiaomo Jing* contains forty-nine talismans, all placed in blank spaces of varying sizes within the text. Here, only several are shown, while the rest have been lost.\n\nThere is also one yellow talisman, traditionally said to derive from the *Zhengao* (Declarations of the Perfected). The talisman of the Supreme Ultimate Perfected One’s edict to the Northern Emperor of Fengdu, as found in the *Yuma Jing* (Scripture of the Jade Horse), remains unverified.\n\nFor the Seven Luminaries Talismans, the secular scriptures provide rough methods of application, though the present use is for wearing. Since the original text offers no explanation, it is deemed appropriate to follow the *Zhengao*: inscribe them in mixed colors upon multicolored silk, receive them, and wear them.\n\nAs for the edict talisman to Fengdu, the *Zhengao* states it should be encased in a double-layered purple pouch and worn upon the head.\n\n#1 *End of the Shangqing Huoluo Qiyuan Fu*\n\n#1 The above annotations are likely added by Gu Huan of the Southern Dynasties or Tao Hongjing.",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "original_text": "上清豁落七元符 经名：上清豁落七元符。 撰人不详，约出於东晋。 系早期上清派重要符文。 一卷。 底本出处：《正统道藏》洞玄部神符类。 上清豁落七元符 右此一条，篆书自佩。 本以日月五星为七元，其外复六符，应是《消魔经》中符，但《消魔经》凡有四十九符，其经中皆空处置，而各有广狭，今此示有数枚，余皆零落。 又一黄符，相传云是《真诰》中所出。 太极真人勅酆都北帝符，在《玉马经》上者，未详审是不。 七元符，依世经中粗有施用法，而今是佩，本故无说，谓宜且依《真诰》，用杂色书杂彩绢上，受而佩之。 勅酆都一符，《真诰》云盛以重紫之囊，佩之头上。 #1 上清豁落七元符竟",
+      "translated_text": "The *Shangqing Huoluo Qiyuan Fu* (Supreme Clarity Talismans of the Seven Luminaries of Expansive Liberation)\n\n**Scripture Title:** *Shangqing Huoluo Qiyuan Fu* (Supreme Clarity Talismans of the Seven Luminaries of Expansive Liberation). Author unknown, approximately dating to the Eastern Jin dynasty. A significant talismanic text of the early Supreme Clarity tradition. Comprising one scroll.\n\n**Source of Base Text:** *Daoist Canon of the Zhengtong Era*, *Dongxuan* Section, *Shenfu* (Divine Talismans) Category.\n\n---\n\nThe *Shangqing Huoluo Qiyuan Fu* (Supreme Clarity Talismans of the Seven Luminaries of Expansive Liberation): This single talisman is to be inscribed in seal script and worn on the person. It originally takes the sun, moon, and five planets as the Seven Luminaries, with an additional six talismans that appear to be those from the *Xiaomo Jing* (Scripture of Dispelling Demons). However, the *Xiaomo Jing* contains forty-nine talismans, all placed in blank spaces of varying sizes within the text. Here, only several are shown, while the rest have been lost.\n\nThere is also one yellow talisman, traditionally said to derive from the *Zhengao* (Declarations of the Perfected). The talisman of the Supreme Ultimate Perfected One’s edict to the Northern Emperor of Fengdu, as found in the *Yuma Jing* (Scripture of the Jade Horse), remains unverified.\n\nFor the Seven Luminaries Talismans, the secular scriptures provide rough methods of application, though the present use is for wearing. Since the original text offers no explanation, it is deemed appropriate to follow the *Zhengao*: inscribe them in mixed colors upon multicolored silk, receive them, and wear them.\n\nAs for the edict talisman to Fengdu, the *Zhengao* states it should be encased in a double-layered purple pouch and worn upon the head.\n\n#1 *End of the Shangqing Huoluo Qiyuan Fu*",
+      "overlap_context": "",
+      "start_char": 0,
+      "end_char": 287,
+      "start_sentence": 0,
+      "end_sentence": 14,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 10.577797174453735,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\神符类\\上清辖落七元符.txt",
+        "category": "神符类"
+      }
+    },
+    {
+      "chunk_index": 1,
+      "original_text": "#1以上注文，当系南朝顾欢或陶弘景所加。",
+      "translated_text": "#1 The above annotations are likely added by Gu Huan of the Southern Dynasties or Tao Hongjing.",
+      "overlap_context": "d.\n\nFor the Seven Luminaries Talismans, the secular scriptures provide rough methods of application, though the present use is for wearing. Since the original text offers no explanation, it is deemed appropriate to follow the *Zhengao*: inscribe them in mixed colors upon multicolored silk, receive them, and wear them.\n\nAs for the edict talisman to Fengdu, the *Zhengao* states it should be encased in a double-layered purple pouch and worn upon the head.\n\n#1 *End of the Shangqing Huoluo Qiyuan Fu*",
+      "start_char": 287,
+      "end_char": 309,
+      "start_sentence": 15,
+      "end_sentence": 15,
+      "model_used": "mistralai/mistral-large-2512",
+      "translation_time": 0.8724367618560791,
+      "metadata": {
+        "source_file": "dao\\正统道藏洞玄部\\神符类\\上清辖落七元符.txt",
+        "category": "神符类"
+      }
+    }
+  ]
+}
