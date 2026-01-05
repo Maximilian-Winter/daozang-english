@@ -1,0 +1,14 @@
+# Requirements for TianJi Optimizer
+# 天機優化器依賴包
+
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.20.0
+matplotlib>=3.5.0
+
+# Optional but recommended
+tqdm>=4.60.0  # For progress bars in training
+
+# For running demos
+# Note: demo_tianji.py will download MNIST dataset automatically
