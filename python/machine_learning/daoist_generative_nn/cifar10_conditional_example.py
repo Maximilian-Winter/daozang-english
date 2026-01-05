@@ -190,9 +190,10 @@ def run_cifar10_training_example():
     image_size = 32
     latent_dim = 256
     batch_size = 64
-    epochs = 10 # Increase for better results
+    epochs = 100 # Increase for better results
     lr = 2e-4
     num_classes = 10
+    num_samples_per_class = 2
 
     # --- 2. Data (數據) ---
     print("Gathering worldly phenomena (CIFAR-10)...")
@@ -212,6 +213,21 @@ def run_cifar10_training_example():
     ).to(device)
     optimizer = optim.Adam(model.parameters(), lr=lr)
     print(f"Model has {sum(p.numel() for p in model.parameters()):,} parameters.")
+
+    # Helper function for conditional generation and saving
+    def generate_and_save_images(epoch_num, model, device, num_classes, num_samples_per_class, classes):
+        model.eval()
+        gen_labels = torch.arange(num_classes).repeat(num_samples_per_class).sort().values.to(device)
+        generated_images = model.generate(gen_labels, device=device)
+        generated_images = generated_images * 0.5 + 0.5 # Denormalize
+        
+        save_path = f"cifar10_conditional_generation_epoch_{epoch_num}.png"
+        save_image(generated_images, save_path, nrow=num_samples_per_class)
+        print(f"\nGenerated images for epoch {epoch_num} and saved to '{save_path}'.")
+        print(f"Each row corresponds to a class:")
+        for i, class_name in enumerate(classes):
+            print(f"  Row {i+1}: {class_name}")
+        model.train() # Set back to train mode
 
     # --- 4. Training (訓練) ---
     print(f"\nBeginning the alchemical process for {epochs} epochs...")
@@ -242,25 +258,16 @@ def run_cifar10_training_example():
         avg_loss = total_loss / len(train_loader)
         print(f"Epoch [{epoch+1}/{epochs}] Avg Loss: {avg_loss:.4f}")
 
-    # --- 5. Conditional Generation (條件生成) ---
-    print("\nAlchemical process complete. Manifesting forms based on intent...")
-    model.eval()
-    num_samples_per_class = 8
-    # Create labels for generation: 8 'plane', 8 'car', ..., 8 'truck'
-    gen_labels = torch.arange(num_classes).repeat(num_samples_per_class).sort().values.to(device)
+        # --- Conditional Generation and Saving every 10 epochs ---
+        if (epoch + 1) % 10 == 0:
+            generate_and_save_images(epoch + 1, model, device, num_classes, num_samples_per_class, classes)
 
-    generated_images = model.generate(gen_labels, device=device)
-    
-    # Denormalize for viewing
-    generated_images = generated_images * 0.5 + 0.5
+    # --- 5. Final Conditional Generation (最終條件生成) ---
+    print("\nAlchemical process complete. Manifesting final forms based on intent...")
+    generate_and_save_images("final", model, device, num_classes, num_samples_per_class, classes)
 
-    save_path = "cifar10_conditional_generation.png"
-    save_image(generated_images, save_path, nrow=num_samples_per_class)
+    print("\nAll training and generation complete. The cycle of learning and manifestation continues.")
 
-    print(f"Generated {num_samples_per_class} images for each of the {num_classes} classes.")
-    print(f"Saved to '{save_path}'. Each row corresponds to a class:")
-    for i, class_name in enumerate(classes):
-        print(f"  Row {i+1}: {class_name}")
 
 if __name__ == "__main__":
     run_cifar10_training_example()
