@@ -1,0 +1,8 @@
+# 三式合一 - Chinese Divination Web Interface
+# Requirements
+
+# Web framework
+streamlit>=1.28.0
+
+# No other external dependencies required
+# The chinese_divination package uses only Python standard library
