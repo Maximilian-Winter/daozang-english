@@ -18,6 +18,11 @@ if sys.platform == 'win32':
 # Add path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+# Import bilingual formatters
+from chinese_divination.qimen.bilingual_formatter import format_detailed_analysis as format_qimen
+from chinese_divination.liuren.bilingual_formatter import format_detailed_analysis as format_liuren
+from chinese_divination.taiyi.bilingual_formatter import format_detailed_analysis as format_taiyi
+
 
 def main():
     print("=" * 70)
@@ -39,8 +44,9 @@ def main():
     plate = qimen.calculate(datetime.now())
     print(plate.format_display())
 
+    # Enhanced bilingual analysis
     analysis = qimen.analyze(plate)
-    print(f"\n整體評斷: {analysis['overall_assessment']['rating']}")
+    print(format_qimen(analysis))
 
     # =========================================================================
     # 2. Taiyi Shenshu (太乙神數)
@@ -55,6 +61,10 @@ def main():
     plate = taiyi.calculate_now("day")
     print(plate.format_summary())
 
+    # Enhanced bilingual analysis
+    analysis = taiyi.analyze(plate)
+    print(format_taiyi(analysis))
+
     # =========================================================================
     # 3. Da Liu Ren (大六壬)
     # =========================================================================
@@ -68,8 +78,9 @@ def main():
     plate = liuren.calculate_now()
     print(plate.format_display())
 
+    # Enhanced bilingual analysis
     analysis = liuren.analyze(plate)
-    print(f"\n整體評斷: {analysis['overall_favorability']}")
+    print(format_liuren(analysis))
 
     # =========================================================================
     # Done
