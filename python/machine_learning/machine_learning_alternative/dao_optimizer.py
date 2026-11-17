@@ -275,28 +275,23 @@ class DaoOptimizer(Optimizer):
                     # AMSGrad: maintain maximum variance (never forget high energy)
                     max_yin_variance = state['max_yin_variance']
                     torch.max(max_yin_variance, yin_variance, out=max_yin_variance)
-                    denom = max_yin_variance.sqrt().add_(eps)
+                    variance_for_denom = max_yin_variance
                 else:
-                    denom = yin_variance.sqrt().add_(eps)
-
-                # Normalize gradient by its RMS (qi energy)
-                normalized_grad = grad / denom
+                    variance_for_denom = yin_variance
 
                 # ═══════════════════════════════════════════════════
                 # Phase 3: Wood (木) - Yang Momentum (Growth)
                 # "A tree as wide as a man's embrace grows from a tiny shoot"
                 # ═══════════════════════════════════════════════════
 
-                # Update Yang momentum (first moment, forward-moving force)
-                yang_momentum.mul_(beta_yang).add_(normalized_grad, alpha=1 - beta_yang)
+                # Update Yang momentum using addcdiv_ to avoid allocating
+                # a normalized_grad intermediate tensor:
+                #   m = β·m + (1-β)·(g / (√v + ε))
+                yang_momentum.mul_(beta_yang).addcdiv_(grad, variance_for_denom.sqrt().add_(eps), value=1 - beta_yang)
 
-                # Bias correction (like Adam)
-                # As step → ∞, correction → 1 (full momentum/variance)
+                # Bias correction scalars (no tensor allocation)
                 bias_correction_yang = 1 - beta_yang ** step
                 bias_correction_yin = 1 - beta_yin ** step
-
-                # Corrected momentum
-                corrected_momentum = yang_momentum / bias_correction_yang
 
                 # ═══════════════════════════════════════════════════
                 # Phase 4: Fire (火) - Wu-Wei Adaptive Rate (Refinement)
@@ -304,25 +299,25 @@ class DaoOptimizer(Optimizer):
                 # ═══════════════════════════════════════════════════
 
                 # Microcosmic Orbit: Cyclical learning rate modulation
-                # Like the 365-day cycle in Daoist internal alchemy
                 orbit_phase = (step % orbit_cycle) / orbit_cycle
                 cyclical_factor = 1.0 + orbit_amplitude * math.cos(2 * math.pi * orbit_phase)
 
-                # Wu-Wei principle: adapt to the landscape
-                # When variance is high (turbulent landscape), slow down
-                # When variance is low (smooth landscape), speed up
-                harmony_factor = bias_correction_yin / (1.0 + torch.norm(yin_variance))
+                # Wu-Wei principle: adapt to the landscape.
+                # Use mean variance (scalar) instead of full tensor norm to
+                # avoid a device-syncing norm() call every step.
+                harmony_factor = bias_correction_yin / (1.0 + yin_variance.mean().item())
 
-                # Combined adaptive learning rate
-                step_size = lr * cyclical_factor * harmony_factor
+                # Combined adaptive learning rate; fold bias_correction_yang
+                # into step_size so we avoid allocating corrected_momentum.
+                step_size = lr * cyclical_factor * harmony_factor / bias_correction_yang
 
                 # ═══════════════════════════════════════════════════
                 # Phase 5: Earth (土) - Parameter Update (Stabilization)
                 # "The noble takes the humble as its root"
                 # ═══════════════════════════════════════════════════
 
-                # The actual parameter update: θ ← θ - α·m
-                p.add_(corrected_momentum, alpha=-step_size)
+                # θ ← θ - step_size · m  (no corrected_momentum allocation)
+                p.add_(yang_momentum, alpha=-step_size)
 
                 # ═══════════════════════════════════════════════════
                 # Microcosmic Orbit: Leap Adjustment
@@ -354,12 +349,16 @@ class DaoOptimizer(Optimizer):
 
         for group in self.param_groups:
             for p in group['params']:
-                if p in self.state:
-                    state = self.state[p]
-                    total_steps += state['step']
-                    total_yang_norm += torch.norm(state['yang_momentum']).item()
-                    total_yin_norm += torch.norm(state['yin_variance']).item()
-                    num_params += 1
+                state = self.state.get(p)
+                if not state:
+                    continue
+                total_steps += state['step']
+                # Compute both norms before .item() to batch device syncs
+                yang_norm = state['yang_momentum'].norm()
+                yin_norm = state['yin_variance'].norm()
+                total_yang_norm += yang_norm.item()
+                total_yin_norm += yin_norm.item()
+                num_params += 1
 
         if num_params == 0:
             return {

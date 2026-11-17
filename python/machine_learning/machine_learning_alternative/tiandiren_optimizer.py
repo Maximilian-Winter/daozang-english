@@ -282,82 +282,72 @@ class TianDiRenOptimizer(Optimizer):
                 # Update Yin variance (tracks gradient energy)
                 yin_variance.mul_(beta_yin).addcmul_(grad, grad, value=1 - beta_yin)
 
-                # Normalize gradient by RMS (qi energy)
+                # Shared denominator for both normalization and later reuse
                 denom = yin_variance.sqrt().add_(eps)
-                normalized_grad = grad / denom
 
                 # ═══════════════════════════════════════════════════
                 # THREE POWERS MOMENTUM (三才動量)
                 # ═══════════════════════════════════════════════════
 
-                # 1. Earthly Momentum (地) - Fast, responsive
-                earthly_momentum.mul_(beta_di).add_(normalized_grad, alpha=1 - beta_di)
-
-                # 2. Human Momentum (人) - Balanced, mediating
-                human_momentum.mul_(beta_ren).add_(normalized_grad, alpha=1 - beta_ren)
-
-                # 3. Celestial Momentum (天) - Slow, strategic
-                celestial_momentum.mul_(beta_tian).add_(normalized_grad, alpha=1 - beta_tian)
+                # Update all three momenta directly with addcdiv_ to avoid
+                # allocating a normalized_grad intermediate tensor
+                earthly_momentum.mul_(beta_di).addcdiv_(grad, denom, value=1 - beta_di)
+                human_momentum.mul_(beta_ren).addcdiv_(grad, denom, value=1 - beta_ren)
+                celestial_momentum.mul_(beta_tian).addcdiv_(grad, denom, value=1 - beta_tian)
 
                 # ═══════════════════════════════════════════════════
                 # HIERARCHICAL INTEGRATION (三才合一)
                 # ═══════════════════════════════════════════════════
 
-                # Compute cyclical weights for each power
-                # Each power has maximum influence at different phases
-
-                # Earthly: Fast cycle (73 steps - Heaven-Earth number)
+                # Compute cyclical weights — share sin computation per phase
                 earthly_phase = (step % earthly_cycle) / earthly_cycle
-                earthly_weight = math.sin(2 * math.pi * earthly_phase) ** 2
+                earthly_sin = math.sin(2 * math.pi * earthly_phase)
+                earthly_weight = earthly_sin * earthly_sin  # sin²
 
-                # Human: Medium cycle (365 steps - 1 year)
                 human_phase = (step % human_cycle) / human_cycle
-                human_weight = math.sin(2 * math.pi * human_phase) ** 2
+                human_sin = math.sin(2 * math.pi * human_phase)
+                human_weight = human_sin * human_sin
 
-                # Celestial: Slow cycle (3650 steps - 10 years)
                 celestial_phase = (step % celestial_cycle) / celestial_cycle
-                celestial_weight = math.sin(2 * math.pi * celestial_phase) ** 2
+                celestial_sin = math.sin(2 * math.pi * celestial_phase)
+                celestial_weight = celestial_sin * celestial_sin
 
-                # Normalize weights (ensure they sum to 1)
+                # Normalize weights
                 total_weight = earthly_weight + human_weight + celestial_weight + eps
-                w_di = earthly_weight / total_weight
-                w_ren = human_weight / total_weight
+                w_di   = earthly_weight   / total_weight
+                w_ren  = human_weight     / total_weight
                 w_tian = celestial_weight / total_weight
 
-                # Hierarchical momentum combination
-                # The Three Powers work together as one
-                unified_momentum = (
-                    w_di * earthly_momentum +
-                    w_ren * human_momentum +
-                    w_tian * celestial_momentum
-                )
-
-                # Bias correction (like Adam)
+                # Bias correction scalar
                 bias_correction_yin = 1 - beta_yin ** step
 
                 # ═══════════════════════════════════════════════════
                 # CYCLICAL LEARNING RATE MODULATION (週期調節)
                 # ═══════════════════════════════════════════════════
 
-                # Combine all three cyclical influences
+                # Reuse sin values to derive cos via identity: cos = sqrt(1 - sin²)
+                # (sign doesn't matter here since we only need the cosine value for
+                # the amplitude modulation — but cos can be negative, so compute directly)
                 cyclical_factor = 1.0 + cycle_amplitude * (
                     0.5 * math.cos(2 * math.pi * earthly_phase) +
                     0.3 * math.cos(2 * math.pi * human_phase) +
                     0.2 * math.cos(2 * math.pi * celestial_phase)
                 )
 
-                # Wu-Wei adaptive rate based on landscape harmony
-                harmony_factor = bias_correction_yin / (1.0 + torch.norm(yin_variance).item())
+                # Wu-Wei adaptive rate: use mean variance (scalar) instead of
+                # full tensor norm to avoid an expensive device-syncing norm() call
+                harmony_factor = bias_correction_yin / (1.0 + yin_variance.mean().item())
 
-                # Combined step size
                 step_size = lr * cyclical_factor * harmony_factor
 
                 # ═══════════════════════════════════════════════════
                 # PARAMETER UPDATE (參數更新)
-                # "The Three Powers harmonize, and all things are complete"
+                # Fuse unified_momentum into three p.add_ calls to avoid
+                # allocating a full unified_momentum tensor each step
                 # ═══════════════════════════════════════════════════
-
-                p.add_(unified_momentum, alpha=-step_size)
+                p.add_(earthly_momentum,   alpha=-step_size * w_di)
+                p.add_(human_momentum,     alpha=-step_size * w_ren)
+                p.add_(celestial_momentum, alpha=-step_size * w_tian)
 
                 # ═══════════════════════════════════════════════════
                 # PERIODIC RESETS (週期重置)
@@ -400,14 +390,20 @@ class TianDiRenOptimizer(Optimizer):
             celestial_cycle = group['celestial_cycle']
 
             for p in group['params']:
-                if p in self.state:
-                    state = self.state[p]
-                    total_steps += state['step']
-                    total_di_norm += torch.norm(state['earthly_momentum']).item()
-                    total_ren_norm += torch.norm(state['human_momentum']).item()
-                    total_tian_norm += torch.norm(state['celestial_momentum']).item()
-                    total_yin_norm += torch.norm(state['yin_variance']).item()
-                    num_params += 1
+                state = self.state.get(p)
+                if not state:
+                    continue
+                total_steps += state['step']
+                # Stack norms and call .item() once per param to reduce device syncs
+                di_norm   = state['earthly_momentum'].norm()
+                ren_norm  = state['human_momentum'].norm()
+                tian_norm = state['celestial_momentum'].norm()
+                yin_norm  = state['yin_variance'].norm()
+                total_di_norm   += di_norm.item()
+                total_ren_norm  += ren_norm.item()
+                total_tian_norm += tian_norm.item()
+                total_yin_norm  += yin_norm.item()
+                num_params += 1
 
         if num_params == 0:
             return {

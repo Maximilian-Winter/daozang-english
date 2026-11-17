@@ -190,23 +190,25 @@ class DaoOptimizer(Optimizer):
         - Metal (金): Contraction, refinement, precision (autumn)
         - Water (水): Minimum yang, maximum adaptability, wu wei (winter)
         """
-        # Phase modulation factors
-        modulations = {
-            'Wood': 1.0 + wu_wei * math.sin(progress * math.pi),  # Gentle expansion
-            'Fire': 1.0 + wu_wei * 0.5,                           # Sustained high energy
-            'Earth': 1.0,                                          # Equilibrium
-            'Metal': 1.0 - wu_wei * 0.3,                          # Contraction, precision
-            'Water': 1.0 - wu_wei * math.sin(progress * math.pi)  # Adaptive flow
-        }
+        # Precompute sin once (shared by Wood and Water)
+        sin_val = math.sin(progress * math.pi)
+        if phase == 'Wood':
+            factor = 1.0 + wu_wei * sin_val
+        elif phase == 'Fire':
+            factor = 1.0 + wu_wei * 0.5
+        elif phase == 'Earth':
+            factor = 1.0
+        elif phase == 'Metal':
+            factor = 1.0 - wu_wei * 0.3
+        else:  # Water
+            factor = 1.0 - wu_wei * sin_val
 
-        return base_value * modulations[phase]
+        return base_value * factor
 
     def _compute_qi_flow(
         self,
         grad: torch.Tensor,
         m_t: torch.Tensor,
-        v_t: torch.Tensor,
-        step: int,
         adaptive: bool
     ) -> torch.Tensor:
         """
@@ -220,11 +222,13 @@ class DaoOptimizer(Optimizer):
             return m_t
 
         # Adaptive Qi: modulate based on gradient-momentum alignment
-        grad_norm = grad.norm() + 1e-10
-        m_norm = m_t.norm() + 1e-10
+        # Use squared norms to avoid two sqrt calls; normalise via dot product
+        dot = (grad * m_t).sum()
+        grad_norm_sq = grad.square().sum() + 1e-20
+        m_norm_sq = m_t.square().sum() + 1e-20
 
-        # Alignment: how well does momentum align with current gradient?
-        alignment = (grad * m_t).sum() / (grad_norm * m_norm)
+        # alignment ∈ [-1, 1]
+        alignment = dot / torch.sqrt(grad_norm_sq * m_norm_sq)
         alignment = torch.clamp(alignment, -1.0, 1.0)
 
         # When aligned (alignment > 0), Qi flows strongly (mutual generation)
@@ -291,14 +295,11 @@ class DaoOptimizer(Optimizer):
                     state['tian_m'] = torch.zeros_like(p)
                     # 地 (Earth): Second moment (local variance)
                     state['di_v'] = torch.zeros_like(p)
-                    # 人 (Human): Adaptive learning rate modulation
-                    state['ren_lr_mult'] = torch.ones_like(p)
 
                 state['step'] += 1
                 step = state['step']
                 tian_m = state['tian_m']
                 di_v = state['di_v']
-                ren_lr_mult = state['ren_lr_mult']
 
                 # ═══════════════════════════════════════════════════════
                 # 天機 | CELESTIAL MECHANISM (Heaven)
@@ -306,8 +307,9 @@ class DaoOptimizer(Optimizer):
                 # ═══════════════════════════════════════════════════════
                 tian_m.mul_(tian_beta).add_(grad, alpha=1 - tian_beta)
 
-                # Bias correction for Heaven's view
-                tian_m_hat = tian_m / (1 - tian_beta ** step)
+                # Bias correction scalars (no new tensor allocation)
+                tian_bc = 1 - tian_beta ** step
+                di_bc = 1 - di_beta ** step
 
                 # ═══════════════════════════════════════════════════════
                 # 地機 | TERRESTRIAL MECHANISM (Earth)
@@ -315,41 +317,37 @@ class DaoOptimizer(Optimizer):
                 # ═══════════════════════════════════════════════════════
                 di_v.mul_(di_beta).addcmul_(grad, grad, value=1 - di_beta)
 
-                # Bias correction for Earth's view
-                di_v_hat = di_v / (1 - di_beta ** step)
+                # Bias-corrected second moment (single allocation, reused below)
+                di_v_hat = di_v / di_bc
 
                 # ═══════════════════════════════════════════════════════
                 # 氣流 | QI FLOW (Vital Energy)
                 # Adaptive momentum that responds to landscape
                 # ═══════════════════════════════════════════════════════
-                qi = self._compute_qi_flow(grad, tian_m_hat, di_v_hat, step, adaptive_qi)
+                tian_m_hat = tian_m / tian_bc
+                qi = self._compute_qi_flow(grad, tian_m_hat, adaptive_qi)
 
                 # ═══════════════════════════════════════════════════════
                 # 陰陽調和 | YIN-YANG HARMONY
                 # Balance exploration (Yang) and exploitation (Yin)
                 # ═══════════════════════════════════════════════════════
-                # Yang (陽): Exploration through momentum
-                yang_force = qi
+                # Shared denominator reused for both yin_force and ren_lr_mult
+                denom = di_v_hat.sqrt_().add_(eps)   # in-place sqrt on di_v_hat copy
 
                 # Yin (陰): Exploitation through adaptive gradient
-                yin_force = grad / (torch.sqrt(di_v_hat) + eps)
+                yin_force = grad / denom
 
+                # Yang (陽): Exploration through momentum
                 # Harmonize Yin and Yang
-                balanced_update = (
-                    yin_yang * yin_force +           # Yin: local exploitation
-                    (1 - yin_yang) * yang_force      # Yang: global exploration
-                )
+                balanced_update = yin_yang * yin_force + (1 - yin_yang) * qi
 
                 # ═══════════════════════════════════════════════════════
                 # 人機 | HUMAN MECHANISM (Adaptive Intelligence)
                 # Adjust learning rate based on curvature
                 # Like a sage adapting to circumstances
                 # ═══════════════════════════════════════════════════════
-                # Estimate curvature from gradient changes
-                # Where landscape is steep, step carefully
-                # Where landscape is gentle, step confidently
-                grad_norm = torch.sqrt(di_v_hat) + eps
-                ren_lr_mult = 1.0 / (1.0 + grad_norm * 0.1)
+                # Reuse denom (already = sqrt(di_v_hat) + eps) — no extra alloc
+                ren_lr_mult = 1.0 / (1.0 + denom * 0.1)
 
                 # ═══════════════════════════════════════════════════════
                 # 五行調變 | WU XING MODULATION (Five Elements)
@@ -366,14 +364,8 @@ class DaoOptimizer(Optimizer):
                 # 道之動 | MOVEMENT OF THE DAO
                 # The final parameter update, harmonizing all forces
                 # ═══════════════════════════════════════════════════════
-                # Apply Human's adaptive learning rate to the update
-                final_update = modulated_update * ren_lr_mult
-
-                # Apply the update
-                p.add_(final_update, alpha=-lr)
-
-                # Store updated state
-                state['ren_lr_mult'] = ren_lr_mult
+                # Fuse Human scaling and lr into a single add_ call
+                p.addcmul_(modulated_update, ren_lr_mult, value=-lr)
 
         return loss
 
@@ -495,9 +487,10 @@ def diagnose_qi_flow(optimizer: DaoOptimizer) -> dict:
 
     This helps understand what the optimizer is "feeling" during training.
     """
+    phase, phase_progress = optimizer.get_current_phase()
     diagnostics = {
-        'phase': optimizer.get_current_phase()[0],
-        'phase_progress': optimizer.get_current_phase()[1],
+        'phase': phase,
+        'phase_progress': phase_progress,
         'step': optimizer.global_step,
         'param_groups': []
     }
