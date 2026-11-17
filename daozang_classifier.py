@@ -44,7 +44,7 @@ log = logging.getLogger(__name__)
 # Configuration
 # ---------------------------------------------------------------------------
 
-DEFAULT_SERVER = "http://localhost:8080"
+DEFAULT_SERVER = "http://127.0.0.1:9931"
 ENDPOINT = "/v1/systemone"
 
 # Maximum characters of text to send per request.
@@ -213,6 +213,8 @@ class TextResult:
     """Classification result for one Daozang text."""
     file_path: str
     file_name: str
+    sub_path: str  # relative path from input root (e.g. "vol_03/chapter_12.txt")
+    sub_dir: str   # parent directory relative to input root (e.g. "vol_03")
     char_count: int
     truncated: bool
     classification_time_ms: float
@@ -238,7 +240,9 @@ class DaozangClassifier:
         self.max_chars = max_chars
         self.endpoint = self.server_url + ENDPOINT
 
-    def classify_text(self, text: str, file_path: str = "") -> TextResult:
+    def classify_text(
+        self, text: str, file_path: str = "", sub_path: str = "", sub_dir: str = "",
+    ) -> TextResult:
         """Classify a single text. Returns a TextResult."""
         file_name = Path(file_path).name if file_path else ""
         char_count = len(text)
@@ -265,6 +269,8 @@ class DaozangClassifier:
             return TextResult(
                 file_path=file_path,
                 file_name=file_name,
+                sub_path=sub_path,
+                sub_dir=sub_dir,
                 char_count=char_count,
                 truncated=truncated,
                 classification_time_ms=elapsed_ms,
@@ -274,6 +280,8 @@ class DaozangClassifier:
         return TextResult(
             file_path=file_path,
             file_name=file_name,
+            sub_path=sub_path,
+            sub_dir=sub_dir,
             char_count=char_count,
             truncated=truncated,
             classification_time_ms=elapsed_ms,
@@ -298,8 +306,14 @@ class DaozangClassifier:
         return None
 
     def classify_directory(self, input_dir: str, extensions: tuple = (".txt", ".md")):
-        """Yield TextResult for every matching file in input_dir (recursive)."""
-        input_path = Path(input_dir)
+        """Yield TextResult for every matching file in input_dir (recursive).
+
+        Files are catalogued by their position relative to input_dir:
+          - sub_path: full relative path (e.g. "vol_03/chapter_12.txt")
+          - sub_dir:  parent directory only (e.g. "vol_03", or "vol_03/part_a")
+        Files directly in input_dir get sub_dir = "" (root).
+        """
+        input_path = Path(input_dir).resolve()
         if not input_path.is_dir():
             log.error("Input directory does not exist: %s", input_dir)
             return
@@ -308,30 +322,53 @@ class DaozangClassifier:
             p for p in input_path.rglob("*")
             if p.is_file() and p.suffix.lower() in extensions
         )
+
+        # Count files per subdirectory for the log summary
+        dir_counts: dict[str, int] = {}
+        for p in files:
+            rel = p.resolve().relative_to(input_path)
+            d = str(rel.parent) if str(rel.parent) != "." else "(root)"
+            dir_counts[d] = dir_counts.get(d, 0) + 1
+
         log.info("Found %d files to classify in %s", len(files), input_dir)
+        for d, c in sorted(dir_counts.items()):
+            log.info("  %s: %d files", d, c)
 
         for i, fpath in enumerate(files, 1):
-            log.info("[%d/%d] Classifying: %s", i, len(files), fpath.name)
+            fpath_resolved = fpath.resolve()
+            rel = fpath_resolved.relative_to(input_path)
+            sub_path = str(rel)
+            sub_dir = str(rel.parent) if str(rel.parent) != "." else ""
+
+            log.info("[%d/%d] Classifying: %s", i, len(files), sub_path)
             try:
                 text = fpath.read_text(encoding="utf-8", errors="replace")
                 if not text.strip():
-                    log.warning("  Skipping empty file: %s", fpath.name)
+                    log.warning("  Skipping empty file: %s", sub_path)
                     continue
-                result = self.classify_text(text, file_path=str(fpath))
+                result = self.classify_text(
+                    text,
+                    file_path=str(fpath),
+                    sub_path=sub_path,
+                    sub_dir=sub_dir,
+                )
                 if result.error:
                     log.error("  Error: %s", result.error)
                 else:
                     log.info(
-                        "  Done in %.0f ms — tradition: %s",
+                        "  Done in %.0f ms — [%s] tradition: %s",
                         result.classification_time_ms,
+                        sub_dir or "root",
                         _extract_choice(result.answers, "tradition"),
                     )
                 yield result
             except Exception as e:
-                log.error("  Exception processing %s: %s", fpath.name, e)
+                log.error("  Exception processing %s: %s", sub_path, e)
                 yield TextResult(
                     file_path=str(fpath),
                     file_name=fpath.name,
+                    sub_path=sub_path,
+                    sub_dir=sub_dir,
                     char_count=0,
                     truncated=False,
                     classification_time_ms=0,
@@ -365,6 +402,8 @@ def flatten_result(result: TextResult) -> dict:
     """Flatten a TextResult into a dict suitable for CSV export."""
     row = {
         "file_name": result.file_name,
+        "sub_path": result.sub_path,
+        "sub_dir": result.sub_dir,
         "file_path": result.file_path,
         "char_count": result.char_count,
         "truncated": result.truncated,
@@ -440,17 +479,46 @@ def write_report(results: list[TextResult], output_path: str):
     ]
     scored.sort(key=lambda x: x[1], reverse=True)
 
+    # Collect unique subdirectories
+    valid_results = [r for r in results if r.error is None]
+    all_dirs = sorted(set(r.sub_dir for r in valid_results))
+
     lines = [
         "# Daozang Classification Report",
         "",
         f"**Total texts classified:** {len(results)}",
         f"**Errors:** {sum(1 for r in results if r.error)}",
-        "",
-        "---",
-        "",
-        "## Top Texts by Sky-Dancing Score",
+        f"**Subdirectories scanned:** {len(all_dirs)}",
         "",
     ]
+
+    # Per-directory summary
+    if any(d for d in all_dirs):  # only if there are actual subdirs
+        lines.extend([
+            "## Directory Overview",
+            "",
+            "| Directory | Texts | Avg Sky-Dancing | Avg Fierce | Avg Feminine | Top Text |",
+            "|-----------|-------|-----------------|------------|--------------|----------|",
+        ])
+        for d in all_dirs:
+            dir_results = [r for r in valid_results if r.sub_dir == d]
+            if not dir_results:
+                continue
+            avg_sky = sum(_extract_score(r.answers, "sky_dancing") for r in dir_results) / len(dir_results)
+            avg_fierce = sum(_extract_score(r.answers, "fierce_imagery") for r in dir_results) / len(dir_results)
+            avg_fem = sum(_extract_score(r.answers, "feminine_divine") for r in dir_results) / len(dir_results)
+            top = max(dir_results, key=lambda r: _extract_score(r.answers, "sky_dancing"))
+            top_sky = _extract_score(top.answers, "sky_dancing")
+            dir_label = d if d else "(root)"
+            lines.append(
+                f"| {dir_label} | {len(dir_results)} | {avg_sky:.2f} | {avg_fierce:.2f} | {avg_fem:.2f} | {top.file_name} ({top_sky:.2f}) |"
+            )
+        lines.extend(["", "---", ""])
+
+    lines.extend([
+        "## Top Texts by Sky-Dancing Score",
+        "",
+    ])
 
     for rank, (result, sky_score) in enumerate(scored[:50], 1):
         a = result.answers
@@ -465,9 +533,9 @@ def write_report(results: list[TextResult], output_path: str):
         text_type = _extract_choice(a, "text_type")
 
         lines.extend([
-            f"### {rank}. {result.file_name}",
+            f"### {rank}. {result.sub_path or result.file_name}",
             "",
-            f"- **Tradition:** {tradition} | **Type:** {text_type}",
+            f"- **Directory:** {result.sub_dir or '(root)'} | **Tradition:** {tradition} | **Type:** {text_type}",
             f"- **Sky-Dancing:** {sky_score:.2f}/4 | **Fierce:** {fierce:.2f}/4 | **Feminine Divine:** {feminine:.2f}/4",
             f"- **Wild/Unconventional:** {wild:.2f}/4 | **Fire:** {fire:.2f}/4 | **Light/Rainbow:** {light:.2f}/4",
             f"- **Emptiness/Void:** {emptiness:.2f}/4 | **Wu-Wei:** {wuwei:.2f}/4",
